@@ -13,11 +13,13 @@
             <li>주선사업</li>-->
         </ul>
         <div class="head_right_m">
-          <img class="m_tab" src="@/assets/images/tab.png">
-          <ul class="head_m_ul">
-            <li>회사소개</li>
-            <li>사업소개</li>
-            <li>견적문의</li>
+          <div @click="headeropen = !headeropen">
+            <img class="m_tab" src="@/assets/images/tab.png">
+          </div>
+          <ul class="head_m_ul" v-show="headeropen">
+            <li @click="clickcontent('intro')">회사소개</li>
+            <li @click="clickcontent('business')">사업소개</li>
+            <li @click="clickcontent('estimate')">견적문의</li>
           </ul>
         </div>
       </div>
@@ -39,7 +41,7 @@ export default {
   },
   data() {
     return {
-
+      headeropen : false,
     }
   },
   computed : {
@@ -71,6 +73,8 @@ export default {
 
       setting().then(function (resolvedData) {
         vm.scrollstore.setcurrentsection(value)
+
+        vm.headeropen = false
 
         if(value == "top"){
           vm.scrollstore.setscrollsection("main")

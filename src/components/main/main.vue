@@ -763,7 +763,7 @@ export default {
           return false
         }
 
-        if(vm.contents == ""){
+        if(vm.content == ""){
           alert("문의내용 항목이 비어있습니다.")
           return false
         }
@@ -1213,7 +1213,7 @@ export default {
 .trans_ser_img{border-radius: 20px;width: 100%; height: 500px;}
 .trans_ser_2 .trans_ser_R{background:url(@/assets/images/transport2.png) no-repeat center; background-size:cover; border-radius:20px;}
 .trans_ser_R{width:calc(40% - 60px);}
-.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;} 
+.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_ser_p{word-break:keep-all; color: var(--black-text, #121212); font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; margin-top: 22px;}
 .trans_ser_boxes{margin-top: 46px;}
 .trans_ser_boxes_4{width:100%;}
@@ -1387,7 +1387,7 @@ select::-ms-expand{display:none;}
   .logi_line_li_1280{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
-  
+
   .swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
   .swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
   .swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
@@ -1419,7 +1419,7 @@ select::-ms-expand{display:none;}
 .trans_ser_img{border-radius: 20px;width: 100%; height: inherit;}
 }
 @media all and (min-width:1280px) and (max-width:1500px){
-  
+
 .logo_intro_txt .logo_intro_t1{margin-right: 0;}
 .logo_intro_txt .logo_intro_t{width: 100%;}
 .logo_intro_t1 div{width:100%; min-width:100%; height: auto;}
