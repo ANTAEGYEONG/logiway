@@ -1444,7 +1444,7 @@ select::-ms-expand{display:none;}
 }
 }
 @media all and (min-width:1024px) and (max-width:1279px){
-  
+
   .bg_txt_b b{font-size: 3.333vw;}
 .bg_txt_b p{font-size: 3.333vw;}
 .swiper-slide{font-size: 0.938vw;}
