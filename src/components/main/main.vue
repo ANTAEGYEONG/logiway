@@ -1416,6 +1416,7 @@ select::-ms-expand{display:none;}
 .logi_intro_R p{font-size: 1.125rem;}
 .logi_line_li_1920{display:none;}
   .logi_line_li_1280{display:list-item;}
+  .trans_ser_img{border-radius: 20px;width: 100%; height: inherit;}
 }
 @media all and (min-width:1280px) and (max-width:1500px){
   
