@@ -12,6 +12,14 @@
 <!--            <li>운송사업</li>
             <li>주선사업</li>-->
         </ul>
+        <div class="head_right_m">
+          <img class="m_tab" src="@/assets/images/tab.png">
+          <ul class="head_m_ul">
+            <li>회사소개</li>
+            <li>사업소개</li>
+            <li>견적문의</li>
+          </ul>
+        </div>
       </div>
     </div>
 </template>
@@ -89,7 +97,23 @@ export default {
 .head_right li{float: left; margin-left: 78px; color: #121212; cursor : pointer;}
 .head_right li.click_hd{color: #FF5819;}
 .head_right li:hover{color: #FF5819;transition: all 0.2s;}
+.head_right_m{display:none;}
 @media all and (min-width:1920px){
-  .header_bg{width: 1920px;}
+.header_bg{width: 1920px;}
+}
+@media all and (min-width:1024px) and (max-width:1279px){
+.header_bg{padding:0px 80px;}
+}
+@media all and (max-width:1023px) {
+.header{position:relative;}
+.header_bg{max-width: 768px; padding:20px 16px; }
+.head_left img{width: 124px; height: inherit;}
+.head_right{display:none;}
+.head_right_m{display:block; background:#fff;}
+.m_tab{width:24px; height:24px;}
+.head_m_ul{background:#fff; filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.08)); position:absolute; width:100%; left: 0; top: 100%; border-radius:10px; padding:0 20px;}
+.head_m_ul li{max-width: 768px; position:relative; padding:14px 0; color: #000; font-size: 1rem; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.64px; left:50%; transform:translateX(-50%);}
+.head_m_ul li:after{position:absolute; content:""; left:0; bottom:0; width:100%; height:1px; background:#e0e0e0;}
+.head_m_ul li::last-child:after{height: 0;}
 }
 </style>
