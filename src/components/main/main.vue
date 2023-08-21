@@ -208,8 +208,10 @@
                   <div class="logi_line_div_txt line_div_txt_3" v-show="logilineshow">
                     <ul class="logi_line_ul">
                       <b>2021~2022</b>
-                      <li class="logi_line_li">기업 물류 운송 강화 (동원 홈푸드, 경동사 등)</li>
-                      <li class="logi_line_li">대형 화주 수주 및 운송 (경동나비엔 등)</li>
+                      <li class="logi_line_li logi_line_li_1920">기업 물류 운송 강화 (동원 홈푸드, 경동사 등)</li>
+                      <li class="logi_line_li logi_line_li_1920">대형 화주 수주 및 운송 (경동나비엔 등)</li>
+                      <li class="logi_line_li logi_line_li_1280">기업 물류 운송 강화<br> (동원 홈푸드, 경동사 등)</li>
+                      <li class="logi_line_li logi_line_li_1280">대형 화주 수주 및 운송<br> (경동나비엔 등)</li>
                     </ul>
                   </div>
                 </transition>
@@ -401,9 +403,8 @@
     <b class="notice">로지웨이의 경쟁력</b>
     <div class="logi_con">
       <div class="logi_con_div">
-        <b  class="logi_con_div_1920">운송 전문<span>&nbsp;로지웨이</span> x 물류 플랫폼 <span>인성데이타</span></b>
-        <b  class="logi_con_div_1280">운송 전문<span>&nbsp;.
-          로지웨이</span><br> x 물류 플랫폼 <span>인성데이타</span></b>
+        <b  class="logi_con_div_1920">운송 전문<span>&nbsp;로지웨이</span> & 물류 플랫폼 <span>인성데이타</span></b>
+        <b  class="logi_con_div_1280">운송 전문<span>&nbsp;로지웨이</span> & <br>물류 플랫폼 <span>인성데이타</span></b>
         <p class="logi_con_div_1920">인성데이타의 기술력과 로지웨이의 화물 운송 노하우를<br> 결합하여 빈틈 없는 서비스를 제공하고 있어요.</p>
         <p class="logi_con_div_1280">인성데이타의 기술력과 로지웨이의 화물 운송 노하우를 결합하여 빈틈 없는 서비스를 제공하고 있어요.</p>
         <img src="@/assets/images/compotition_1.png">
@@ -486,7 +487,7 @@
       <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
       <div class="counsel_con">
         <div class="counsel_div">
-          <input class="counsel_inq" placeholder="견적 및 상담문의드립니다." v-model="title">
+          <input class="counsel_inq" placeholder="제목" v-model="title">
           <input class="counsel_name" placeholder="회사명/이름" v-model="company">
           <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           <input class="counsel_add" placeholder="이메일 주소" v-model="email">
@@ -653,7 +654,7 @@ export default {
       logilineshow : false,
 
       /////////////////////
-      title : "견적 및 상담문의드립니다",
+      title : "견적 및 상담문의드립니다.",
       company : "",
       phone : "",
       email : "",
@@ -988,7 +989,7 @@ export default {
 .phrase_work_2:hover .introfade_btn{background: #FAAC18; color: #fff; transition: 0.1s ease-in-out;}
 .phrase_work_3:hover{border-color:#E20613;}
 .phrase_work_3:hover .introfade_btn{background: #E20613; color: #fff; transition: 0.1s ease-in-out;}
-.introfade_btn{margin-top:12px; padding:10px 20px; border-radius:8px; border:1px solid; font-size: 16px; font-style: normal; font-weight: 500; line-height: 150%;letter-spacing: -0.64px; text-align: center;}
+.introfade_btn{margin-top:12px; padding:10px 20px; border-radius:10px; border:1px solid; font-size: 16px; font-style: normal; font-weight: 500; line-height: 150%;letter-spacing: -0.64px; text-align: center;}
 .phrase_work_1 .introfade_btn{border-color: #009FDA; color: #009FDA;}
 .phrase_work_2 .introfade_btn{border-color: #FAAC18; color: #FAAC18;}
 .phrase_work_3 .introfade_btn{border-color: #E20613; color: #E20613;}
@@ -1183,7 +1184,7 @@ export default {
 .logo_intro_txt>.logo_intro_t>b{color: var(--black-text, #121212); margin-bottom: 24px; font-size: 22px; letter-spacing: -0.88px; text-align: left; line-height: 150%; font-weight: 700; display: block; width: 100%;}
 .logo_intro_t1 div{float:left; border-radius: 20px; border: 1.5px solid #E0E0E0; background: #FFF; width: auto; height: inherit; padding: 70px 49px 48px 56px;}
 .logostory_sub{max-width:450px; width:100%;}
-.logo_intro_t1 div p{white-space:nowrap; color: var(--black-text, #121212); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -1.4px; margin-top:64px; text-align: left;}
+.logo_intro_t1 div p{color: var(--black-text, #121212); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -1.4px; margin-top:64px; text-align: left;}
 .main_color{border-radius: 20px; padding: 32px; text-align: left; float: left; position:relative; width: 300px; height: 320px; color: #fff;}
 .color_orange{background: var(--main-orange, #FF5819);  margin-right:20px;}
 .color_navy{background: var(--main-navy, #262E40);}
@@ -1197,7 +1198,7 @@ export default {
 .main_color_txt_down div:nth-child(2) b{margin-right: 34px;}
 .main_color_txt_down div:nth-child(3) b{margin-right: 18px;}
 .filebox{margin-top:80px; width: 100%;}
-.filebox label{margin-top:110px; display: block; margin:0 auto;width: 270px;padding: 16px 30px;border-radius: 8px;border: 1.5px solid var(--main-orange, #FF5819); color:#FF5819; cursor: pointer; text-align: center;font-size: 22px;font-style: normal;font-weight: 400;line-height: 150%;letter-spacing: -0.88px;}
+.filebox label{margin-top:110px; display: block; margin:0 auto;width: 270px;padding: 16px 30px;border-radius: 10px;border: 1.5px solid var(--main-orange, #FF5819); color:#FF5819; cursor: pointer; text-align: center;font-size: 22px;font-style: normal;font-weight: 400;line-height: 150%;letter-spacing: -0.88px;}
 .filebox label:hover{background: #FF5819; color: #fff;transition: all 0.1s;}
 .filebox input[type="file"]{position: absolute; width: 0;height: 0;padding: 0;overflow: hidden;border: 0;}
 
@@ -1331,6 +1332,8 @@ select::-ms-expand{display:none;}
   .logi_ser_p_1280{display:none;}
   .logi_con_div_1920{display:block !important;}
   .logi_con_div_1280{display:none !important;}
+  .logi_line_li_1920{display:list-item;}
+  .logi_line_li_1280{display:none;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1371,6 +1374,8 @@ select::-ms-expand{display:none;}
 .counsel_div{width: 45%;}
 .counsel_img{width: 40%; height: inherit;}
 .logi_con_div_1280{display:none !important;}
+.logi_line_li_1920{display:list-item;}
+.logi_line_li_1280{display:none;}
 
 }
 @media all and (min-width:1280px) and (max-width:1850px){
@@ -1378,8 +1383,11 @@ select::-ms-expand{display:none;}
 .logi_con_div_1280{display:block !important;}
 .logi_intro_L{width: -webkit-fill-available;}
 .logi_intro_R{text-align: left; width: 54vw;}
+.logi_line_li_1920{display:list-item;}
+  .logi_line_li_1280{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
+  
   .swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
   .swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
   .swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
@@ -1406,9 +1414,11 @@ select::-ms-expand{display:none;}
 .part_swiper .swiper-slide img{width:210px !important; height:inherit; object-fit:contain;}
 .logi_line_div_img{top: -64%;}
 .logi_intro_R p{font-size: 1.125rem;}
+.logi_line_li_1920{display:none;}
+  .logi_line_li_1280{display:list-item;}
 }
 @media all and (min-width:1280px) and (max-width:1500px){
-
+  
 .logo_intro_txt .logo_intro_t1{margin-right: 0;}
 .logo_intro_txt .logo_intro_t{width: 100%;}
 .logo_intro_t1 div{width:100%; min-width:100%; height: auto;}
