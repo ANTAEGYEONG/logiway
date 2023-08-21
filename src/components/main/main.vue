@@ -487,8 +487,8 @@
       <div class="counsel_con">
         <div class="counsel_div">
           <input class="counsel_inq" placeholder="견적 및 상담문의드립니다." v-model="title">
-          <input class="counsel_name" placeholder="회사명/이름" v-model="company">
-          <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12">
+          <input class="counsel_name" placeholder="회사명/이름" v-model="company"> 
+          <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           <input class="counsel_add" placeholder="이메일 주소" v-model="email">
           <textarea class="counsel_content" placeholder="문의내용을 입력해 주세요." v-model="content"></textarea>
           <div class="check_div">
