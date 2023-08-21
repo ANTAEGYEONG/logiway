@@ -105,13 +105,13 @@ export default {
 .header_bg{padding:0px 80px;}
 }
 @media all and (max-width:1023px) {
-.header{position:relative;}
+.header{position:fixed; }
 .header_bg{max-width: 768px; padding:20px 16px; }
 .head_left img{width: 124px; height: inherit;}
 .head_right{display:none;}
 .head_right_m{display:block; background:#fff;}
 .m_tab{width:24px; height:24px;}
-.head_m_ul{background:#fff; filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.08)); position:absolute; width:100%; left: 0; top: 100%; border-radius:10px; padding:0 20px;}
+.head_m_ul{display:none; background:#fff; filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.08)); position:absolute; width:100%; left: 0; top: 100%; border-radius:10px; padding:0 20px;}
 .head_m_ul li{max-width: 768px; position:relative; padding:14px 0; color: #000; font-size: 1rem; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.64px; left:50%; transform:translateX(-50%);}
 .head_m_ul li:after{position:absolute; content:""; left:0; bottom:0; width:100%; height:1px; background:#e0e0e0;}
 .head_m_ul li::last-child:after{height: 0;}
