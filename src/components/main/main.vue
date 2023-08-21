@@ -1210,7 +1210,7 @@ export default {
 .trans_ser_1 .trans_ser_L{width:calc(60% - 60px);}
 .trans_ser_2 .trans_ser_R{width:calc(60% - 60px);}
 .trans_ser_1 .trans_ser_L{background:url(@/assets/images/transport.png) no-repeat center; background-size:cover; border-radius:20px;}
-.trans_ser_img{border-radius: 20px;width: 100%; height: inherit;}
+.trans_ser_img{border-radius: 20px;width: 100%; height: 500px;}
 .trans_ser_2 .trans_ser_R{background:url(@/assets/images/transport2.png) no-repeat center; background-size:cover; border-radius:20px;}
 .trans_ser_R{width:calc(40% - 60px);}
 .logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
