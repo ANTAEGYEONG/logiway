@@ -497,7 +497,7 @@
               <input type="checkbox" id="check1" v-model="check">
             <label for="check1">개인정보처리방침 동의(필수)</label>
             </div>
-            <button class="counsel_btn" :class="{act : check}" @click="mailsubmit">문의신청</button>
+            <button class="counsel_btn" :class="{act : check && title != '' && company != '' && phone != '' && email != '' && content != ''}" @click="mailsubmit">문의신청</button>
           </div>
         </div>
         <img class="counsel_img" src="@/assets/images/footer.png">
@@ -744,7 +744,7 @@ export default {
     mailsubmit(){
       let vm = this
 
-      if(!vm.check){
+      if(!vm.check || vm.company == "" || vm.phone == "" || vm.email == "" || vm.content == "" || vm.title == ""){
         return false
       }else{
 
@@ -781,7 +781,7 @@ export default {
         mailAPI.sendmail(jsondata).then((response) => {
           //console.log("response : ",response)
 
-          if(response.data.status){
+          if(response.data.status == "true"){
             alert("견적 및 상담문의 전송이 완료되었습니다.")
 
             vm.title = "견적 및 상담문의드립니다"
@@ -792,7 +792,7 @@ export default {
             vm.check = false
 
           }else{
-            alert("견적 및 상담문의 전송에 실패하였습니다. \n 잠시 후 다시 시도하여주세요.")
+            alert(response.data.message)
           }
         })
 
