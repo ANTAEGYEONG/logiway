@@ -1213,7 +1213,7 @@ export default {
 .trans_ser_img{border-radius: 20px;width: 100%; height: 500px;}
 .trans_ser_2 .trans_ser_R{background:url(@/assets/images/transport2.png) no-repeat center; background-size:cover; border-radius:20px;}
 .trans_ser_R{width:calc(40% - 60px);}
-.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
+.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;} 
 .logi_ser_p{word-break:keep-all; color: var(--black-text, #121212); font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; margin-top: 22px;}
 .trans_ser_boxes{margin-top: 46px;}
 .trans_ser_boxes_4{width:100%;}
