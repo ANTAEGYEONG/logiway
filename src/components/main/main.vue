@@ -84,7 +84,9 @@
     <div class="logi_intro" ref="introsection">
       <div class="logi_intro_con">
         <secondcontent @triggerFadeIn="contentfadein('second')" :persec="1"><div></div></secondcontent>
-        <div class="logi_intro_L"></div>
+        <div class="logi_intro_L">
+          <img src="@/assets/images/inrtroduce.png" class="intro_L_1280">
+        </div>
         <div class="logi_intro_R">
           <b>로지웨이는</b>
           <p class="logi_intro_R_1920">
@@ -114,41 +116,74 @@
         <div class="single_phrase">
           <div class="single_bg">
           <b class="notice">계열사 소개</b>
+          <div class="notice_1920">
             <div class="single_phrase_img">
               <img class="single_phrase_back" src="@/assets/images/illust4.png">
               <img class="car" src="@/assets/images/123.png">
               <img class="car2" src="@/assets/images/car2.png">
               <img class="car3" src="@/assets/images/car3.png">
             </div>
-          <transition name="introfade">
-            <a href="https://www.insungdata.com/" target="_blank" class="phrase_work_1 phrase_work" v-show="introshow">
-              <img src="@/assets/images/insung.png">
-              <b>(주)인성데이타</b>
-              <p>
-                최신 기술의 화물 플랫폼 운영<br/> 전국 운송 네트워크 보유
-              </p>
-              <button class="introfade_btn">홈페이지 바로가기</button>
-            </a>
-          </transition>
-          <transition name="introfade">
-            <a href="http://www.bikebank.kr/" target="_blank" class="phrase_work_2 phrase_work" v-show="introshow">
-              <img src="@/assets/images/bike_bank.png">
-              <b>(주)바이크뱅크</b>
-              <p>
-                이륜차 렌탈, 판매, 정비<br/>
-                전기바이크 유통, 생산, 판매 전문
-              </p>
-              <button class="introfade_btn">홈페이지 바로가기</button>
-            </a>
-          </transition>
-          <transition name="introfade">
-            <a href="https://logiall.com/" target="_blank" class="phrase_work_3 phrase_work" v-show="introshow">
-              <img src="@/assets/images/logiall.png">
-              <b>(주)로지올</b>
-              <p>국내 1위 푸드/소화물 딜리버리<br/>플랫폼 운영</p>
-              <button class="introfade_btn">홈페이지 바로가기</button>
-            </a>
-          </transition>
+            <transition name="introfade">
+              <a href="https://www.insungdata.com/" target="_blank" class="phrase_work_1 phrase_work" v-show="introshow">
+                <img src="@/assets/images/insung.png">
+                <b>(주)인성데이타</b>
+                <p>
+                  최신 기술의 화물 플랫폼 운영<br/> 전국 운송 네트워크 보유
+                </p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </transition>
+            <transition name="introfade">
+              <a href="http://www.bikebank.kr/" target="_blank" class="phrase_work_2 phrase_work" v-show="introshow">
+                <img src="@/assets/images/bike_bank.png">
+                <b>(주)바이크뱅크</b>
+                <p>
+                  이륜차 렌탈, 판매, 정비<br/>
+                  전기바이크 유통, 생산, 판매 전문
+                </p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </transition>
+            <transition name="introfade">
+              <a href="https://logiall.com/" target="_blank" class="phrase_work_3 phrase_work" v-show="introshow">
+                <img src="@/assets/images/logiall.png">
+                <b>(주)로지올</b>
+                <p>국내 1위 푸드/소화물 딜리버리<br/>플랫폼 운영</p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </transition>
+          </div>
+          <div class="notice_1280">
+            <div class="notice_m_div">
+              <a href="https://www.insungdata.com/" target="_blank" class="phrase_work_1 phrase_work" v-show="introshow">
+                <img src="@/assets/images/insung.png">
+                <b>(주)인성데이타</b>
+                <p>
+                  최신 기술의 화물 플랫폼 운영<br/> 전국 운송 네트워크 보유
+                </p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </div>
+            <div class="notice_m_div">
+              <a href="https://logiall.com/" target="_blank" class="phrase_work_3 phrase_work" v-show="introshow">
+                <img src="@/assets/images/logiall.png">
+                <b>(주)로지올</b>
+                <p>국내 1위 푸드/소화물 딜리버리<br/>플랫폼 운영</p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </div>
+            <div class="notice_m_div">
+              <a href="http://www.bikebank.kr/" target="_blank" class="phrase_work_2 phrase_work" v-show="introshow">
+                <img src="@/assets/images/bike_bank.png">
+                <b>(주)바이크뱅크</b>
+                <p>
+                  이륜차 렌탈, 판매, 정비<br/>
+                  전기바이크 유통, 생산, 판매 전문
+                </p>
+                <button class="introfade_btn">홈페이지 바로가기</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </introobserver>
@@ -233,7 +268,12 @@
                 </transition>
               </div>
             </div>
-        </div>
+          </div>
+          <div class="logi_history_M_con">
+            <div class="history_M_left">
+
+            </div>
+          </div>
         </logihisobserver>
       <secondcontent @triggerFadeIn="contentfadein('second')" :persec="1"><div></div></secondcontent>
     </div>
@@ -495,7 +535,9 @@
           <div class="check_div">
             <div class="check_box">
               <input type="checkbox" id="check1" v-model="check">
-            <label for="check1">개인정보처리방침 동의(필수)</label>
+            <label for="check1">
+              <p>개인정보처리방침 동의(필수)</p>
+            </label>
             </div>
             <button class="counsel_btn" :class="{act : check}" @click="mailsubmit">문의신청</button>
           </div>
@@ -1013,7 +1055,7 @@ export default {
 .logi_intro_con{overflow:hidden; display: flex; width: 100%; justify-content: space-between; align-items: center; height: 25.625em; flex-wrap: nowrap;}
 .logi_intro_con div{display: inline-block;}
 .logi_intro_L{width: 56.6rem; height:inherit; margin-right: 100px; background: url(@/assets/images/inrtroduce.png) no-repeat center #F2F3F7; background-size:contain; border-radius: 20px; padding: 40px 60px;}
-.logi_intro_L img{width:100%; opacity:0;}
+.intro_L_1280{display:none;}
 .logi_intro_R{text-align: left; width: 595px;}
 .logi_intro_R b{color: var(--main-orange, #FF5819); font-size: 2.5rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -1.6px; margin-bottom:20px; display:block;}
 .logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; white-space: nowrap;}
@@ -1023,6 +1065,7 @@ export default {
 /* .logi_history>.notice{color: #FFF; text-align: center; font-size: 3.375rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px; margin-bottom: 80px; display: block;} */
 /* .logi_history>.notice span{color: var(--main-orange, #FF5819);font-size: 3.375rem;} */
 .logi_history_con{padding-top:200px;}
+.logi_history_M_con{display:none;}
 .logi_his_list{padding:0px 187px;}
 .logi_line{width: 100%; height: 2px; transform-origin: left; background: #fff;}
 @keyframes line {
@@ -1264,8 +1307,8 @@ export default {
     vertical-align: middle;
 }
 .check_div input[type="checkbox"]:checked {background:url(../../../src/assets/images/checked.png) no-repeat center;background-size:cover;}
-.check_div label{
-  color: #FFF;font-size: 20px;font-style: normal;font-weight: 700;line-height: 150%;letter-spacing: -0.8px; margin-left:16px;}
+.check_div label p{color: #FFF;font-size: 20px;font-style: normal;font-weight: 700;line-height: 150%;letter-spacing: -0.8px; margin-left:16px;}
+.check_div label p:hover{color: #FF5819; text-decoration : underline;}
 /* footer */
 footer{background: var(--main-navy, #262E40); padding: 100px 160px; text-align:left;}
 .footer_img{width: 264px; margin-bottom: 40px;}
@@ -1334,6 +1377,7 @@ select::-ms-expand{display:none;}
   .logi_con_div_1280{display:none !important;}
   .logi_line_li_1920{display:list-item;}
   .logi_line_li_1280{display:none;}
+  .notice_1280{display:block;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1456,7 +1500,7 @@ select::-ms-expand{display:none;}
 }
 @media all and (min-width:1024px) and (max-width:1279px){
   
-  .bg_txt_b b{font-size: 3.333vw;}
+.bg_txt_b b{font-size: 3.333vw;}
 .bg_txt_b p{font-size: 3.333vw;}
 .swiper-slide{font-size: 0.938vw;}
 .swiper_txt b{font-size: 1.563vw;}
@@ -1564,15 +1608,114 @@ select::-ms-expand{display:none;}
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
-  .com_pro_com_2{margin: 0 60px;}
+.com_pro_com_2{margin: 0 60px;}
 .com_pro_com .com_pro_b{font-size: 2rem;}
 .com_pro_com .com_pro_shape{width: inherit; height:480px;}
+
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
-@media all and (min-width:480px) and (max-width:768px) {
+@media all and (max-width:768px) {
+  /* common */
   .com_pro_com_2{margin: 0 30px;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
+  .notice{font-size:1.5rem;}
+/* main_bg */
+  .swiper_bg{    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    animation: swiper-5e2104ef 1s ease-in-out;
+}
+.bg_txt b{justify-content: center;}
+.bg_txt_b b{font-size: 1.75rem;}
+.bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
+.bg_txt_p{font-size: 1rem; text-align:center; margin-top:24px;}
+.swiper_bg_img{margin-top:58px;}
+.swiper_bg_img .swiper_bg_main1{width: 80%;}
+.swiper_bg_img .swiper_bg_main2{width: 80%;}
+.swiper_bg_img .swiper_bg_main3{width: 80%;}
+.swiper_bg2_sub_3{}
+.swiper_bg_img .swiper_bg_sub{width: 12%;}
+.swiper_bg3_sub_4{width: 20%; height: inherit; left:32%; bottom:22%;}
+.swiper_bg3_sub_5{width: 20%; height: inherit; left: 50%; top: 44%; animation: speech2 3s ease-in-out infinite;}
+.swiper_bg3_sub_6{width: 20%; height: inherit; right:18%; top:16%; }
+.swiper_bg3_sub_7{width: 20%; height: inherit; left:43%; top:-2%; animation: speech2 3s ease-in-out infinite;}
+@keyframes speech1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes speech2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.swiper_bg2_sub_1{width: 20%; height: inherit; right:30%; top:8%;}
+.swiper_bg2_sub_2{width: 20%; height: inherit; left: 0%; top: 12%; animation: bubble2 3s ease-in-out infinite;}
+.swiper_bg2_sub_3{width: 24%; height: inherit; left:0%; top:42%;}
+@keyframes bubble {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translate(-10px, -10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes bubble2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+/* logi_intro */
+.logi_intro{padding:52px 20px 80px 20px; height:inherit;}
+.logi_intro_con{display:block; height:inherit;}
+.logi_intro_con div{display:block;}
+.logi_intro_L{width:100%; margin-right:0px; background:transparent; padding:0px; margin-bottom:24px;}
+.intro_L_1280{display:block; width:100%;}
+.logi_intro_R b{font-size:1.375rem; margin-bottom:24px;}
+.logi_intro_R{width:100%;}
+.logi_intro_R_1280{display:block;}
+.logi_intro_R p{font-size:1rem; word-break:keep-all; white-space:initial;}
+.logi_intro_R_1920{display:none;}
+
+/* single_phrase */
+.notice_1920{display:none;}
+.notice_1280{display:block; margin-top:48px; padding:0 20px;}
+.single_phrase{padding:60px 20px 80px 20px; overflow:hidden;}
+.notice_m_div{margin-bottom:20px;}
+.notice_m_div:last-child{margin-bottom:0px;}
+.phrase_work{position:relative; width:100%; display:block; top: 0; left: 0;}
+.phrase_work_1:hover{width:100%; left:0; top:0; border:0;}
+.phrase_work_2:hover{width:100%; left:0; top:0; border:0;}
+.phrase_work_3:hover{width:100%; left:0; top:0; border:0;}
+
+/* logi_history */
+.logi_history{padding: 60px 20px 80px 20px;}
+.logi_history>.notice span{font-size:1.5rem;}
+.logi_history_con{display:none;}
+.logi_history_M_con{display:block;}
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
