@@ -19,6 +19,11 @@ const routes = [
         name: "Home",
         component: () => import("@/components/main/main"),
     },
+    {
+        path: "/private",
+        name: "private",
+        component: () => import("@/components/private"),
+    },
 ]
 
 const router = createRouter({
