@@ -536,7 +536,7 @@
             <div class="check_box">
               <input type="checkbox" id="check1" v-model="check">
             <label for="check1">
-              <p>개인정보처리방침 동의(필수)</p>
+              <p @click="private">개인정보처리방침 동의(필수)</p>
             </label>
             </div>
             <button class="counsel_btn" :class="{act : check && title != '' && company != '' && phone != '' && email != '' && content != ''}" @click="mailsubmit">문의신청</button>
@@ -551,7 +551,7 @@
     <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
     <img class="footer_img" src="@/assets/images/logo_w.png">
     <ul>
-      <li>개인정보처리방침</li>
+      <li @click="private">개인정보처리방침</li>
     </ul>
     <div class="footer_p">
       <p>로지웨이 주식회사&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표 : 이윤조&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)<br>
@@ -576,6 +576,7 @@
 <script>
 import {ref, watch, onMounted, computed} from "vue"
 import { useScroll, whenever } from '@vueuse/core'
+import { useRouter } from 'vue-router'
 //import { storeToRefs } from 'pinia'
 
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -853,7 +854,13 @@ export default {
       }else if(event.target.value == 4){
         window.open("https://www.dotstation.kr/")
       }
-    }
+    },
+
+    private(){
+      let vm = this
+      let routerdata = vm.$router.resolve({ name: 'private' })
+      window.open(routerdata.href, '_blank');
+    },
 
   },
 }
@@ -1500,7 +1507,7 @@ select::-ms-expand{display:none;}
 }
 @media all and (min-width:1024px) and (max-width:1279px){
 <<<<<<< HEAD
-  
+
 .bg_txt_b b{font-size: 3.333vw;}
 =======
 
