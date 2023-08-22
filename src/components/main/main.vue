@@ -529,7 +529,7 @@
         <div class="counsel_div">
           <input class="counsel_inq" placeholder="제목" v-model="title">
           <input class="counsel_name" placeholder="회사명/이름" v-model="company">
-          <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12">
+          <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           <input class="counsel_add" placeholder="이메일 주소" v-model="email">
           <textarea class="counsel_content" placeholder="문의내용을 입력해 주세요." v-model="content"></textarea>
           <div class="check_div">
@@ -539,7 +539,7 @@
               <p>개인정보처리방침 동의(필수)</p>
             </label>
             </div>
-            <button class="counsel_btn" :class="{act : check}" @click="mailsubmit">문의신청</button>
+            <button class="counsel_btn" :class="{act : check && title != '' && company != '' && phone != '' && email != '' && content != ''}" @click="mailsubmit">문의신청</button>
           </div>
         </div>
         <img class="counsel_img" src="@/assets/images/footer.png">
@@ -786,7 +786,7 @@ export default {
     mailsubmit(){
       let vm = this
 
-      if(!vm.check){
+      if(!vm.check || vm.company == "" || vm.phone == "" || vm.email == "" || vm.content == "" || vm.title == ""){
         return false
       }else{
 
@@ -805,7 +805,7 @@ export default {
           return false
         }
 
-        if(vm.contents == ""){
+        if(vm.content == ""){
           alert("문의내용 항목이 비어있습니다.")
           return false
         }
@@ -823,7 +823,7 @@ export default {
         mailAPI.sendmail(jsondata).then((response) => {
           //console.log("response : ",response)
 
-          if(response.data.status){
+          if(response.data.status == "true"){
             alert("견적 및 상담문의 전송이 완료되었습니다.")
 
             vm.title = "견적 및 상담문의드립니다"
@@ -834,7 +834,7 @@ export default {
             vm.check = false
 
           }else{
-            alert("견적 및 상담문의 전송에 실패하였습니다. \n 잠시 후 다시 시도하여주세요.")
+            alert(response.data.message)
           }
         })
 
@@ -1256,7 +1256,7 @@ export default {
 .trans_ser_img{border-radius: 20px;width: 100%; height: 500px;}
 .trans_ser_2 .trans_ser_R{background:url(@/assets/images/transport2.png) no-repeat center; background-size:cover; border-radius:20px;}
 .trans_ser_R{width:calc(40% - 60px);}
-.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;} 
+.logi_ser_b{color: var(--black-text, #121212); font-size: 54px; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_ser_p{word-break:keep-all; color: var(--black-text, #121212); font-size: 18px; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; margin-top: 22px;}
 .trans_ser_boxes{margin-top: 46px;}
 .trans_ser_boxes_4{width:100%;}
@@ -1431,7 +1431,7 @@ select::-ms-expand{display:none;}
   .logi_line_li_1280{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
-  
+
   .swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
   .swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
   .swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
@@ -1463,7 +1463,7 @@ select::-ms-expand{display:none;}
 .trans_ser_img{border-radius: 20px;width: 100%; height: inherit;}
 }
 @media all and (min-width:1280px) and (max-width:1500px){
-  
+
 .logo_intro_txt .logo_intro_t1{margin-right: 0;}
 .logo_intro_txt .logo_intro_t{width: 100%;}
 .logo_intro_t1 div{width:100%; min-width:100%; height: auto;}
@@ -1499,8 +1499,13 @@ select::-ms-expand{display:none;}
 }
 }
 @media all and (min-width:1024px) and (max-width:1279px){
+<<<<<<< HEAD
   
 .bg_txt_b b{font-size: 3.333vw;}
+=======
+
+  .bg_txt_b b{font-size: 3.333vw;}
+>>>>>>> 1718f73caf9311dacf48419af9db893323ec58bc
 .bg_txt_b p{font-size: 3.333vw;}
 .swiper-slide{font-size: 0.938vw;}
 .swiper_txt b{font-size: 1.563vw;}
