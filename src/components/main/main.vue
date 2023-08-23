@@ -764,7 +764,7 @@
         </select>
     </div>
   </footer>
-  <div class="M_order">문의하기</div>
+    <div class="M_order" @click="clickcontent('estimate')">문의하기</div>
   </div>
 </template>
 
@@ -1056,6 +1056,32 @@ export default {
       let routerdata = vm.$router.resolve({ name: 'private' })
       window.open(routerdata.href, '_blank');
     },
+
+    clickcontent(value){
+      let vm = this
+
+      function setting(){
+        return new Promise((resolve, reject) => {
+          vm.scrollstore.setcurrentsection("")
+          resolve("1")
+        })
+      }
+
+      setting().then(function (resolvedData) {
+        vm.scrollstore.setcurrentsection(value)
+
+        if(value == "top"){
+          vm.scrollstore.setscrollsection("main")
+        }else if(value == "intro"){
+          vm.scrollstore.setscrollsection("second")
+        }else if(value == "business"){
+          vm.scrollstore.setscrollsection("third")
+        }else if(value == "estimate"){
+          vm.scrollstore.setscrollsection("last")
+        }
+      })
+
+    }
 
   },
 }
@@ -1817,7 +1843,7 @@ select::-ms-expand{display:none;}
 @media all and (min-width:1023px) and (max-width:1279px){
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .com_pro_com_2{margin: 0 60px;}
-  
+
 }
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
