@@ -262,7 +262,7 @@
                   <div class="logi_line_div_txt line_div_txt_4" v-show="logilineshow">
                     <ul class="logi_line_ul">
                       <b>2023</b>
-                      <li class="logi_line_li">로지웨이 주식회사로 사명 변경</li>
+                      <li class="logi_line_li">로지웨이 주식회사로 법인 설립</li>
                     </ul>
                   </div>
                 </transition>
@@ -271,7 +271,49 @@
           </div>
           <div class="logi_history_M_con">
             <div class="history_M_left">
-
+              <div class="history_M_left_div">
+                <div><img class="logi_line_div_img line_div_img_1" src="@/assets/images/history4_m.png"></div> 
+              </div>
+              <div class="history_M_left_div">
+                <div><img class="logi_line_div_img line_div_img_2" src="@/assets/images/history3_m.png"></div>
+              </div>
+              <div class="history_M_left_div">
+                <div><img class="logi_line_div_img line_div_img_3" src="@/assets/images/history2_m.png"></div>
+              </div>
+              <div class="history_M_left_div">
+                <div><img class="logi_line_div_img line_div_img_4" src="@/assets/images/history1_m.png"></div>
+              </div>
+            </div>
+            <div class="history_M_dots">
+              <div class="dot_line">
+                <div class="dot_dot dot_1"></div>
+                <div class="dot_dot dot_2"></div>
+                <div class="dot_dot dot_3"></div>
+                <div class="dot_dot dot_4"></div>
+              </div>
+            </div>
+            <div class="history_M_right"> 
+              <ul class="history_M_right_ul">
+                <div class="history_M_txt">
+                  <b>2023</b>
+                  <li class="logi_line_li">로지웨이 주식회사로 법인 설립
+                  </li>
+                </div>
+                <div class="history_M_txt">
+                  <b>2021~2022</b>
+                  <li class="logi_line_li">기업 물류 운송 강화<br> (동원 홈푸드, 경동사 등)</li>
+                  <li class="logi_line_li">대형 화주 수주 및 운송<br> (경동나비엔 등)</li>
+                </div>
+                <div class="history_M_txt">
+                  <b>2019</b>
+                  <li class="logi_line_li">화물 공유 기사망 확대</li>
+                  <li class="logi_line_li">직영 차량/기사 확대 운영</li>
+                </div>
+                <div class="history_M_txt">
+                  <b>2017</b>
+                  <li class="logi_line_li">화물 운송 주선 사업으로 법인 설립</li>
+                </div>
+            </ul>
             </div>
           </div>
         </logihisobserver>
@@ -364,7 +406,6 @@
   <div class="logi_service">
     <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
     <div class="trans_ser trans_ser_1">
-      <!-- <div class="trans_ser_L"><img class="trans_ser_img" src="@/assets/images/transport.png"></div> -->
       <div class="trans_ser_L"><div class="trans_ser_img"></div></div>
       <div class="trans_ser_R">
         <b class="logi_ser_b">운송 서비스</b>
@@ -436,6 +477,69 @@
       <div class="trans_ser_R">
         <div class="trans_ser_img"></div>
       </div>
+    </div>
+    <div class="trans_ser_M">
+      <div class="trans_ser_M_div trans_ser_M_1">
+        <b class="notice">운송 서비스</b>
+        <div class="trans_ser_M_box">
+          <img src="@/assets/images/transport.png">
+          <p class="logi_ser_p logi_ser_p_1280">
+            운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
+            1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이 고객 니즈에 맞는 운송서비스를 제공합니다.
+          </p>
+          <div class="trans_ser_boxes">
+            <div class="trans_ser_boxes_4">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_1.png">
+                <p>1톤 카고</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_2.png">
+                <p>1톤 탑차</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_3.png">
+                <p>1톤 냉장/냉동</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_4.png">
+                <p>1.5톤 윙바디</p>
+              </div>
+            </div>
+            <div class="trans_ser_boxes_4">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_5.png">
+                <p>2톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_6.png">
+                <p>5톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_7.png">
+                <p>8톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_8.png">
+                <p>25톤</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trans_ser_M_div trans_ser_M_2">
+        <b class="notice">주선 서비스</b>
+        <div class="trans_ser_M_box">
+          <img src="@/assets/images/transport2.png">
+          <p class="logi_ser_p logi_ser_p_1280">
+          로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
+          화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
+          또한, 실시간 상담원 배차 상황실 보유를 통해 보다 신속하고 정확한
+          커뮤니케이션을 진행하고 있습니다.
+        </p>
+        <img src="@/assets/images/transport3.png">
+        </div>
+      </div>    
     </div>
     <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
   </div>
@@ -517,6 +621,71 @@
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-17.png"></swiper-slide>
       </swiper>
     </div>
+    <div class="partner_swiper_M">
+      <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
+        <swiper
+        :slidesPerView="2.5"
+        :spaceBetween="0"
+        :loop="true"
+        :autoplay="{
+          delay: 0,
+          disableOnInteraction: false,
+          reverseDirection: true,
+        }"
+        :speed="5000"
+        :modules="modules"
+        class="part_swiper mySwiper"
+      >
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-01.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-02.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-03.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-04.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-05.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-06.png"></swiper-slide>
+        </swiper>
+
+        <swiper
+        :slidesPerView="2.5"
+        :spaceBetween="0"
+        :loop="true"
+        :autoplay="{
+          delay: 0,
+          disableOnInteraction: false,
+          reverseDirection: false,
+        }"
+        :speed="5000"
+        :modules="modules"
+        class="mySwiper part_swiper"
+        >
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-07.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-08.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-09.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-10.png"></swiper-slide>
+        <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-11.png"></swiper-slide>
+        </swiper>
+
+        <swiper
+          :slidesPerView="2.5"
+          :spaceBetween="0"
+          :loop="true"
+          :loopedSlides = "1"
+          :autoplay="{
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: true,
+          }"
+          :modules="modules"
+          :speed="4000"
+          class="part_swiper mySwiper"
+        >
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-12.png"></swiper-slide>
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-13.png"></swiper-slide>
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-14.png"></swiper-slide>
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-15.png"></swiper-slide>
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-16.png"></swiper-slide>
+          <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-17.png"></swiper-slide>
+        </swiper>
+    </div>
     <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
   </div>
   <div class="logi_counseling" ref="estimatesection">
@@ -527,11 +696,12 @@
       <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
       <div class="counsel_con">
         <div class="counsel_div">
-          <input class="counsel_inq" placeholder="제목" v-model="title">
-          <input class="counsel_name" placeholder="회사명/이름" v-model="company">
-          <input class="counsel_num" placeholder="연락처" v-model="phone" type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-          <input class="counsel_add" placeholder="이메일 주소" v-model="email">
-          <textarea class="counsel_content" placeholder="문의내용을 입력해 주세요." v-model="content"></textarea>
+          <p class="counsel_div_p">* 표시는 필수 입력입니다.</p>
+          <input class="counsel_inq" placeholder="제목＊" v-model="title">
+          <input class="counsel_name" placeholder="회사명/이름＊" v-model="company">
+          <input class="counsel_num" placeholder="연락처＊" v-model="phone" type="text" maxlength="12" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+          <input class="counsel_add" placeholder="이메일 주소＊" v-model="email">
+          <textarea class="counsel_content" placeholder="문의내용을 입력해 주세요.＊" v-model="content"></textarea>
           <div class="check_div">
             <div class="check_box">
               <input type="checkbox" id="check1" v-model="check">
@@ -1110,7 +1280,7 @@ export default {
 .logi_line_div_txt{margin-top: 54px; display: flex; align-items: center; flex-wrap: nowrap; justify-content: center;}
 .logi_line_ul{}
 .logi_line_ul b{color: #FFF; text-align: center; font-family: 'NexonLv1Gothic'; font-size: 2.75rem; font-style: normal; font-weight: 700; line-height: 150%; margin-bottom:34px;overflow: hidden;display: block; letter-spacing: 0;}
-.logi_line_li{white-space: nowrap; list-style:disc; color: #FFF; text-align: left; font-size: 1.125rem; font-style: normal; font-weight: 300; line-height: 160%;letter-spacing: -0.72px; width: fit-content;}
+.logi_line_li{word-break:keep-all; list-style:disc; color: #FFF; text-align: left; font-size: 1.125rem; font-style: normal; font-weight: 300; line-height: 160%;letter-spacing: -0.72px; width: fit-content;}
 /*.line_div_img_1{animation: line_div_img_1 2.5s;}*/
 .logidiv1img-enter-active, .logidiv1img-leave-active {animation: line_div_img_1 2.5s;}
 .logidiv1img-enter-from, .logidiv1img-leave-to {opacity: 0;}
@@ -1227,7 +1397,7 @@ export default {
 .logo_intro_txt>.logo_intro_t>b{color: var(--black-text, #121212); margin-bottom: 24px; font-size: 22px; letter-spacing: -0.88px; text-align: left; line-height: 150%; font-weight: 700; display: block; width: 100%;}
 .logo_intro_t1 div{float:left; border-radius: 20px; border: 1.5px solid #E0E0E0; background: #FFF; width: auto; height: inherit; padding: 70px 49px 48px 56px;}
 .logostory_sub{max-width:450px; width:100%;}
-.logo_intro_t1 div p{color: var(--black-text, #121212); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -1.4px; margin-top:64px; text-align: left;}
+.logo_intro_t1 div p{word-break:keep-all; color: var(--black-text, #121212); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -1.4px; margin-top:64px; text-align: left;}
 .main_color{border-radius: 20px; padding: 32px; text-align: left; float: left; position:relative; width: 300px; height: 320px; color: #fff;}
 .color_orange{background: var(--main-orange, #FF5819);  margin-right:20px;}
 .color_navy{background: var(--main-navy, #262E40);}
@@ -1272,6 +1442,7 @@ export default {
 .logi_partner_up_b{display: block; color: var(--black-text, #000); text-align: center; font-size: 3.375rem;  font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_partner_up_p{color: var(--lightest-navy, #8B95A1); text-align: center; font-size: 1.375rem;  font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.88px; margin-top:40px;}
 .partner_swiper{margin: 100px 0 200px 0;}
+.partner_swiper_M{display:none;}
 .part_swiper{margin-bottom: 20px; height: 193px;}
 .part_swiper .swiper-slide{ height: 193px;}
 .part_swiper .swiper-slide img{width:320px !important; height:inherit; object-fit:contain;}
@@ -1285,6 +1456,7 @@ export default {
 .counsel_div{text-align:left; margin-top:64px; float:left;}
 .counsel_div>input, textarea{margin-bottom:16px; border:none; border-radius:10px; width:548px; height: 55px; padding: 13px 24px; box-sizing: border-box; font-size:18px; font-style: normal; font-weight: 400; display: block;}
 .counsel_div textarea{height: 192px; font-size:18px; font-style: normal; font-weight: 400; font-family: 'SUIT'; margin-bottom:24px; border-radius:10px;}
+.counsel_div_p{text-align: right; margin-bottom: 8px;}
 .counsel_name{}
 .counsel_num{}
 .counsel_content{}
@@ -1378,6 +1550,7 @@ select::-ms-expand{display:none;}
   .logi_line_li_1920{display:list-item;}
   .logi_line_li_1280{display:none;}
   .notice_1280{display:block;}
+  .trans_ser_M{display:none;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1407,6 +1580,7 @@ select::-ms-expand{display:none;}
 .logi_con>div{width: calc(33.3% - 24px); position: relative;}
 .logi_con>div img[data-v-5e2104ef] {width: 60%; height: auto; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
 .logi_service{padding: 218px 160px;}
+.trans_ser_M{display:none;}
 .trans_ser_1 .trans_ser_L{width: calc(55% - 30px);}
 .trans_ser_1 .trans_ser_R{width: calc(45% - 30px); float:right !important;}
 .trans_ser_2 .trans_ser_R{width: calc(55% - 30px);}
@@ -1432,22 +1606,22 @@ select::-ms-expand{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
 
-  .swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
-  .swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
-  .swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
-  .swiper_bg3_sub_6{width: 146.133px; height: inherit; right:8%; top:16%; }
-  .swiper_bg3_sub_7{width: 116.27px; height: inherit; left:43%; top:-2%;}
-  .swiper_bg2_sub_1{width: 120px; height: inherit;}
-  .swiper_bg2_sub_2{width: 120px; height: inherit;}
-  .swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
-  .logi_intro_R_1280{display: none;}
-  .logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
-  .phrase_work_2{left: 200px; bottom: -8%;}
-  .logi_line_div{min-height:272px;}
-  .logi_ser_p_1920{display:none;}
-  .logi_ser_p_1280{display:block;}
-  .trans_ser_sub_img{width:80%;}
-  .trans_ser_boxes{margin-top: 26px;}
+.swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
+.swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
+.swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
+.swiper_bg3_sub_6{width: 146.133px; height: inherit; right:8%; top:16%; }
+.swiper_bg3_sub_7{width: 116.27px; height: inherit; left:43%; top:-2%;}
+.swiper_bg2_sub_1{width: 120px; height: inherit;}
+.swiper_bg2_sub_2{width: 120px; height: inherit;}
+.swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
+.logi_intro_R_1280{display: none;}
+.logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
+.phrase_work_2{left: 200px; bottom: -8%;}
+.logi_line_div{min-height:272px;}
+.logi_ser_p_1920{display:none;}
+.logi_ser_p_1280{display:block;}
+.trans_ser_sub_img{width:80%;}
+.trans_ser_boxes{margin-top: 26px;}
 .trans_ser_boxes_4:first-child{margin-bottom: 12px;}
 .trans_ser_box{width: calc(25% - 12px) !important; height: 100px; margin-right: 12px;}
 .trans_ser_box img{width: 62px; height:auto;}
@@ -1499,13 +1673,8 @@ select::-ms-expand{display:none;}
 }
 }
 @media all and (min-width:1024px) and (max-width:1279px){
-<<<<<<< HEAD
-  
 .bg_txt_b b{font-size: 3.333vw;}
-=======
-
-  .bg_txt_b b{font-size: 3.333vw;}
->>>>>>> 1718f73caf9311dacf48419af9db893323ec58bc
+.bg_txt_b b{font-size: 3.333vw;}
 .bg_txt_b p{font-size: 3.333vw;}
 .swiper-slide{font-size: 0.938vw;}
 .swiper_txt b{font-size: 1.563vw;}
@@ -1717,16 +1886,129 @@ select::-ms-expand{display:none;}
 .phrase_work_3:hover{width:100%; left:0; top:0; border:0;}
 
 /* logi_history */
-.logi_history{padding: 60px 20px 80px 20px;}
+.logi_history{padding: 60px 42px 80px 42px;}
 .logi_history>.notice span{font-size:1.5rem;}
 .logi_history_con{display:none;}
-.logi_history_M_con{display:block;}
+.logi_history_M_con{display:flex; position:relative;justify-content: space-between;}
+.history_M_left{}
+.history_M_left_div{height: 162px; margin-bottom: 22px;overflow: hidden;}
+.history_M_left_div:last-child{height:auto; margin-bottom:0;}
+.history_M_left_div>div{width: auto; height: auto; max-width:80px; max-height:80px; min-width:60px; min-height:60px; border-radius: 16px; background:#fff; padding:5px; background-size:contain !important;}
+.history_M_left_div img{}
+.logi_line_div_img{width: 100%; height: inherit; position: relative; top:0; left:0; transform:none}
+.history_M_div{display: flex; padding: 0 18px; justify-content: space-between; height: inherit;margin-bottom:18px; position:relative;}
+.history_M_dots{display:block; position:relative;}
+.history_M_dots .dot_line{width:1px; height:88%; background:#fff; position:relative; top:20px;}
+.history_M_dots .dot_dot{position:absolute; width: 12px; height: 12px; border-radius:50%; background: #FF5819; left: 50%; transform: translateX(-50%);}
+.history_M_dots .dot_1{top:0;}
+.history_M_dots .dot_2{top:33%;}
+.history_M_dots .dot_3{top:66%;}
+.history_M_dots .dot_4{top:100%;}
+.history_M_right{width: 60%; margin-top:10px;}
+.history_M_right ul{}
+.history_M_right ul .history_M_txt{text-align: left; height: 162px; margin-bottom: 22px;overflow: hidden;}
+.history_M_right ul .history_M_txt:last-child{height:auto; margin-bottom:0;}
+.history_M_right ul b{font-family: 'NexonLv1Gothic'; font-size: 1.5rem; font-weight: 700; line-height: 36px; letter-spacing: 0em;color:#fff;}
+.history_M_right ul li{margin-left: 20px; word-break:keep-all; font-size:1rem;}
+
+/* logo_intro */
+.logo_intro{padding:80px 20px;}
+.logo_intro .logostory{padding:0; margin:42px 0 48px 0;}
+.logo_intro_txt{padding:0;}
+.logo_intro_txt div{}
+
+.logo_intro_txt .logo_intro_t1{margin-right:0; margin-bottom:48px;}
+.logo_intro_txt .logo_intro_t{}
+.logo_intro_txt>.logo_intro_t>b{font-size: 1.25rem; font-weight: 700; line-height: 30px; letter-spacing: -0.04em; text-align: left;}
+.logo_intro_t1 div{border:0px; padding:0;}
+.logostory_sub{margin:24px 0;}
+.pc_1280_txt{display:block;}
+.pc_1920_txt{display:none;}
+.logo_intro_t1 div p{font-size:1rem; margin-top:24px;}
+.logo_intro_txt .logo_intro_t2{width:100%; display:inline-block;}
+.main_color{width:calc(50% - 16px); height:182px; padding:18px 20px;}
+.color_orange{}
+.main_color_eg{font-size:0.75rem;}
+.main_color_num{font-size:0.75rem;}
+.main_color_txt_down p{font-size: 0.75rem;}
+.main_color_txt_down div:nth-child(2) b{margin-right:30px;}
+.main_color_txt_down{bottom:18px;}
+.filebox{margin-top: 24px;}
+.filebox label{width:100%; padding:14px 0; font-size:1rem;}
+
+/* logi_work */
+.logi_work{padding:60px 20px 80px 20px;}
+.logi_work_con{margin:0;}
+.logi_work_img{width:100%; height:inherit;}
+.logi_txt{display:none;}
+.logi_work_img_main{width:inherit; height:inherit; padding:48px 41px;}
+.logi_work_sub{}
+.logi_work_sub_img{margin-bottom:16px; position:relative; left:0 !important; top:0 !important; width:100%; border-radius:20px; padding: 10px 20px; justify-content: flex-start;}
+.logi_work_sub_img:last-child{margin-bottom:0px;}
+.logi_work_sub_img p{margin-left:32px; word-break: keep-all; font-size: 1.125rem; font-weight: 700; letter-spacing: -0.04em; }
+.sub_img_1{left: -300px; top: -20px;}
+.sub_img_1::after{display:none;}
+.sub_img_2{ left: -40px; top: -230px;}
+.sub_img_2::after{display:none;}
+.sub_img_3{ right: -84px; top: -230px;}
+.sub_img_3::after{display:none;}
+.sub_img_4{right: -300px; top: -20px;}
+.sub_img_4::after{display:none;}
+.logi_work_sub_img img{width:80px; height: 80px;}
+
+/* logi_service */
+.logi_service{padding:80px 20px;}
+.trans_ser{display: none;}
+.trans_ser_M{display:block;}
+.trans_ser_M_box{}
+.trans_ser_M_box img{width:100%; height:auto; border-radius:10px; margin:40px 0 32px 0;}
+.logi_ser_p{font-size:1rem; text-align:left; margin:0;}
+.trans_ser_boxes{margin-top: 32px;}
+.trans_ser_boxes_4{display: flex; justify-content: center;}
+.trans_ser_box{width: 25% !important; height: auto; margin-right:12px;}
+.trans_ser_box img{margin:0 12px;}
+.trans_ser_box p{font-size:0.75rem;}
+.trans_ser_boxes_4:first-child{margin-bottom:12px;}
+.trans_ser_M_2{margin-top:120px;}
+.trans_ser_M_box img:last-child{width:90%;}
+
+/* logi_compititon */
+.logi_compititon{padding:60px 20px 80px 20px;}
+.logi_con{flex-wrap: wrap;}
+.logi_con_div{} 
+.logi_con>div{width:100%; height:inherit; margin-right:0; padding: 32px 24px; margin-bottom:20px;}
+.logi_con>div:last-child{margin-bottom:0px;}
+.logi_con>div b{font-size: 1.25rem; font-weight: 700; line-height: 30px; letter-spacing: -0.04em; text-align: center;}
+.logi_con>div b span{font-size: 1.25rem;}
+.logi_con>div p{font-size: 1rem; font-weight: 400; letter-spacing: -0.04em; text-align: center; margin-top:16px; }
+.logi_con>div img{width:130px; height:inherit; margin-top:16px;}
+.logi_con_div_1920{display:none !important;}
+
+/* logi_partner */
+.logi_partner{margin-top:80px; padding-top:0px;}
+.partner_swiper{display:none; margin:48px 0 100px 0;}
+.part_swiper{height:inherit;}
+.part_swiper .swiper-slide{height:inherit;}
+.partner_swiper_M{display:block; margin:48px 0 100px 0;}
+.part_swiper .swiper-slide img{width:100% !important;}
+
+/* logi_counseling_bg */
+.logi_counseling_bg{padding:60px 20px;}
+.logi_counseling_b{}
+.logi_counseling_p{}
+.counsel_con{}
+.counsel_div{}
+.counsel_div>input{}
+.counsel_div textarea{}
+.counsel_img{}
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
 @media all and (max-width:479px) {
   .com_pro_com_2{margin: 0 30px;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
+  .history_M_left_div{height: 182px; margin-bottom: 22px;overflow: hidden;}
+  .history_M_right ul .history_M_txt{text-align: left; height: 182px; margin-bottom: 22px;overflow: hidden;}
 }
 
 
