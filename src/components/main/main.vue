@@ -691,6 +691,7 @@
   <div class="logi_counseling" ref="estimatesection">
     <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
     <div class="logi_counseling_bg">
+      <img class="counsel_img_M" src="@/assets/images/footer.png">
       <b class="logi_counseling_b">견적 및 상담문의</b>
       <p class="logi_counseling_p">똑똑한 종합물류 서비스, 로지웨이와 함께하세요</p>
       <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
@@ -706,7 +707,7 @@
             <div class="check_box">
               <input type="checkbox" id="check1" v-model="check">
             <label for="check1">
-              <p @click="private">개인정보처리방침 동의(필수)</p>
+              <p @click="private">개인정보 수집/이용 동의(필수)</p>
             </label>
             </div>
             <button class="counsel_btn" :class="{act : check && title != '' && company != '' && phone != '' && email != '' && content != ''}" @click="mailsubmit">문의신청</button>
@@ -719,27 +720,51 @@
   </div>
   <footer>
     <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
-    <img class="footer_img" src="@/assets/images/logo_w.png">
-    <ul>
-      <li @click="private">개인정보처리방침</li>
-    </ul>
-    <div class="footer_p">
-      <p>로지웨이 주식회사&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표 : 이윤조&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)<br>
-        사업자등록번호 : 520-86-00639&nbsp;&nbsp;&nbsp;<br>
-        메일 : logiway@logiway.co.kr
-      </p>
+    <div class="footer_P">
+      <img class="footer_img" src="@/assets/images/logo_w.png">
+      <ul>
+        <li @click="private">개인정보처리방침</li>
+      </ul>
+      <div class="footer_p">
+        <p>로지웨이 주식회사&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표 : 이윤조&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)<br>
+          사업자등록번호 : 520-86-00639&nbsp;&nbsp;&nbsp;<br>
+          메일 : logiway@logiway.co.kr
+        </p>
+      </div>
+      <div class="footer_txt">
+        <p>© 2023 LOGIWAY. All Rights Reserved</p>
+        <select @change="familysitechange($event)">
+          <option value="0">FAMILY SITE</option>
+          <option value="1">인성데이타</option>
+          <option value="2">로지올</option>
+          <option value="3">바이크뱅크</option>
+          <option value="4">닷스테이션</option>
+        </select>
+      </div>
     </div>
-    <div class="footer_txt">
-      <p>© 2023 LOGIWAY. All Rights Reserved</p>
-      <select @change="familysitechange($event)">
-        <option value="0">FAMILY SITE</option>
-        <option value="1">인성데이타</option>
-        <option value="2">로지올</option>
-        <option value="3">바이크뱅크</option>
-        <option value="4">닷스테이션</option>
-      </select>
+    <div class="footer_M">
+      <img class="footer_img" src="@/assets/images/logo_w.png">
+      <div class="footer_p">
+        <p>로지웨이 주식회사</p>
+        <p>대표 : 이윤조</p>
+        <p>주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)</p>
+        <p>사업자등록번호 : 520-86-00639</p>
+        <p>메일 : logiway@logiway.co.kr</p>
+      </div>
+      <p class="copyright">© 2023 LOGIWAY. All Rights Reserved</p>
+      <ul>
+        <li @click="private">개인정보처리방침</li>
+      </ul>
+        <select @change="familysitechange($event)">
+          <option value="0">FAMILY SITE</option>
+          <option value="1">인성데이타</option>
+          <option value="2">로지올</option>
+          <option value="3">바이크뱅크</option>
+          <option value="4">닷스테이션</option>
+        </select>
     </div>
   </footer>
+  <div class="M_order">문의하기</div>
   </div>
 </template>
 
@@ -1470,6 +1495,7 @@ export default {
 .counsel_btn{color: #FFF; text-align: center; height: 60px; font-size: 1.25rem;font-weight: 500; line-height: 150%; letter-spacing: -1.04px; padding: 0px 30px; width:212px;border-radius: 10px; background: #D1D1D1;}
 .counsel_btn.act{background:#FF5819;}
 .counsel_img{width: 500px; height:500px;}
+.counsel_img_M{display:none;}
 .check_box{display:flex; align-items: center;}
 .check_div{display: flex; align-items: center; justify-content: space-between;}
 .check_div input[type="checkbox"] {
@@ -1486,10 +1512,11 @@ export default {
     vertical-align: middle;
 }
 .check_div input[type="checkbox"]:checked {background:url(../../../src/assets/images/checked.png) no-repeat center;background-size:cover;}
-.check_div label p{color: #FFF;font-size: 20px;font-style: normal;font-weight: 700;line-height: 150%;letter-spacing: -0.8px; margin-left:16px;}
+.check_div label p{color: #FFF;font-size: 20px;font-style: normal;font-weight: 700;line-height: 150%;letter-spacing: -0.8px; margin-left:16px; cursor:pointer;}
 .check_div label p:hover{color: #FF5819; text-decoration : underline;}
 /* footer */
 footer{background: var(--main-navy, #262E40); padding: 100px 160px; text-align:left;}
+.footer_M{display:none;}
 .footer_img{width: 264px; margin-bottom: 40px;}
 .footer_p p{color: #8B95A1; font-size: 1rem;font-weight: 500; line-height: 220%; letter-spacing: -0.64px;}
 footer ul{width: 100%; display: block; overflow: hidden; margin-bottom:40px;}
@@ -1556,8 +1583,10 @@ select::-ms-expand{display:none;}
   .logi_con_div_1280{display:none !important;}
   .logi_line_li_1920{display:list-item;}
   .logi_line_li_1280{display:none;}
-  .notice_1280{display:block;}
+  .notice_1280{display:none;}
   .trans_ser_M{display:none;}
+  .notice_m_div{display:none;}
+  .M_order{display:none;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1788,6 +1817,7 @@ select::-ms-expand{display:none;}
 @media all and (min-width:1023px) and (max-width:1279px){
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .com_pro_com_2{margin: 0 60px;}
+  
 }
 
 /* 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -1816,9 +1846,9 @@ select::-ms-expand{display:none;}
 .bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
 .bg_txt_p{font-size: 1rem; text-align:center; margin-top:24px;}
 .swiper_bg_img{margin-top:58px;}
-.swiper_bg_img .swiper_bg_main1{width: 80%;}
-.swiper_bg_img .swiper_bg_main2{width: 80%;}
-.swiper_bg_img .swiper_bg_main3{width: 80%;}
+.swiper_bg_img .swiper_bg_main1{width: 70%;}
+.swiper_bg_img .swiper_bg_main2{width: 70%;}
+.swiper_bg_img .swiper_bg_main3{width: 70%;}
 .swiper_bg2_sub_3{}
 .swiper_bg_img .swiper_bg_sub{width: 12%;}
 .swiper_bg3_sub_4{width: 20%; height: inherit; left:32%; bottom:22%;}
@@ -1984,6 +2014,7 @@ select::-ms-expand{display:none;}
 
 /* logi_compititon */
 .logi_compititon{padding:60px 20px 80px 20px;}
+.logi_compititon>.notice{margin-bottom:48px;}
 .logi_con{flex-wrap: wrap;}
 .logi_con_div{} 
 .logi_con>div{width:100%; height:inherit; margin-right:0; padding: 32px 24px; margin-bottom:20px;}
@@ -2004,13 +2035,38 @@ select::-ms-expand{display:none;}
 
 /* logi_counseling_bg */
 .logi_counseling_bg{padding:60px 20px;}
-.logi_counseling_b{}
-.logi_counseling_p{}
-.counsel_con{}
-.counsel_div{}
-.counsel_div>input{}
-.counsel_div textarea{}
-.counsel_img{}
+.counsel_img_M{display: block; width: 100%; margin-bottom: 40px; padding: 0 60px;}
+.logi_counseling_b{width:100%; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.04em; text-align: center;}
+.logi_counseling_p{width:100%; margin-top:14px; font-size: 1rem;letter-spacing: -0.04em; text-align: center;}
+.counsel_con{display:block;}
+.counsel_div{width: 100%; margin-top:32px;}
+.counsel_div>input{width: 100%; font-size:1rem;}
+.counsel_div>input::placeholder, textarea::placeholder{font-size:1rem;}
+.counsel_div textarea{width: 100%; font-size:1rem;}
+.counsel_div_p{font-size:0.75rem;}
+.counsel_img{display:none;}
+.check_div{display:block;}
+.check_div input[type="checkbox"]{width:24px; height:24px;}
+.check_div label p{font-size:1rem; margin-left: 14px;}
+.counsel_btn{width:100%; font-size:1rem; height:52px; font-weight:400; margin-top:24px;}
+
+/* footer */
+footer{padding:60px 20px;}
+.footer_P{display:none;}
+.footer_M{display:block;}
+.footer_img{width:160px; height:inherit;}
+footer ul{margin-bottom:32px;}
+footer ul li{font-size:1rem; margin-top:20px;}
+.footer_p{}
+.footer_p p{word-break:keep-all; font-size: 0.875rem; font-weight: 400; line-height: inherit; letter-spacing: -0.04em; text-align: left; margin-bottom:8px;}
+.footer_p p:last-child{margin-bottom:0px;}
+.copyright{word-break: keep-all; font-size: 0.875rem; font-weight: 400; line-height: inherit; letter-spacing: -0.04em; text-align: left; color: #8B95A1; margin-top:20px; }
+.footer_M select{width:100%; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url(../../../src/assets/images/arrow.png) no-repeat 95% 50% #262E40; background-size: 20px 20px; color: #999; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 160%; letter-spacing: -0.64px; padding: 14px 16px;  border-radius: 8px; border: 1px solid #8B95A1; height: 56px;;}
+select::-ms-expand{display:none;}
+.footer_M select option{}
+
+/* M_order */
+.M_order{z-index:1; box-shadow: 1px 1px 10px 0px #0000001A; display: block;left: 0;bottom: 0;width: 100%;height: 52px;border-radius: 10px 10px 0px 0px;background: #5950EE;font-size: 1rem;font-weight: 400;letter-spacing: -0.04em;text-align: center;position: fixed;color: #fff;line-height: 52px;}
 }
 
 /* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
