@@ -272,7 +272,7 @@
           <div class="logi_history_M_con">
             <div class="history_M_left">
               <div class="history_M_left_div">
-                <div><img class="logi_line_div_img line_div_img_1" src="@/assets/images/history4_m.png"></div> 
+                <div><img class="logi_line_div_img line_div_img_1" src="@/assets/images/history4_m.png"></div>
               </div>
               <div class="history_M_left_div">
                 <div><img class="logi_line_div_img line_div_img_2" src="@/assets/images/history3_m.png"></div>
@@ -292,7 +292,7 @@
                 <div class="dot_dot dot_4"></div>
               </div>
             </div>
-            <div class="history_M_right"> 
+            <div class="history_M_right">
               <ul class="history_M_right_ul">
                 <div class="history_M_txt">
                   <b>2023</b>
@@ -539,7 +539,7 @@
         </p>
         <img src="@/assets/images/transport3.png">
         </div>
-      </div>    
+      </div>
     </div>
     <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
   </div>
@@ -721,7 +721,7 @@
     <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
     <img class="footer_img" src="@/assets/images/logo_w.png">
     <ul>
-      <li @click="private">개인정보처리방침</li>
+      <li @click="private">개인정보 수집/이용 동의</li>
     </ul>
     <div class="footer_p">
       <p>로지웨이 주식회사&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표 : 이윤조&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)<br>
@@ -1985,7 +1985,7 @@ select::-ms-expand{display:none;}
 /* logi_compititon */
 .logi_compititon{padding:60px 20px 80px 20px;}
 .logi_con{flex-wrap: wrap;}
-.logi_con_div{} 
+.logi_con_div{}
 .logi_con>div{width:100%; height:inherit; margin-right:0; padding: 32px 24px; margin-bottom:20px;}
 .logi_con>div:last-child{margin-bottom:0px;}
 .logi_con>div b{font-size: 1.25rem; font-weight: 700; line-height: 30px; letter-spacing: -0.04em; text-align: center;}
