@@ -153,7 +153,7 @@
               </a>
             </transition>
           </div>
-          <!-- <div class="notice_1280">
+          <div class="notice_1280">
             <div class="notice_m_div">
               <a href="https://www.insungdata.com/" target="_blank" class="phrase_work_1 phrase_work" v-show="introshow">
                 <img src="@/assets/images/insung.png">
@@ -183,7 +183,7 @@
                 <button class="introfade_btn">홈페이지 바로가기</button>
               </a>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </introobserver>
@@ -405,77 +405,150 @@
   </div>
   <div class="logi_service">
     <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
-    <div class="trans_ser trans_ser_1">
-      <div class="trans_ser_L"><div class="trans_ser_img"></div></div>
-      <div class="trans_ser_R">
-        <b class="logi_ser_b">운송 서비스</b>
-        <p class="logi_ser_p logi_ser_p_1920">
-          운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
-          1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이<br> 고객 니즈에 맞는 운송서비스를 제공합니다.
-        </p>
-        <p class="logi_ser_p logi_ser_p_1280">
-          운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
-          1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이 고객 니즈에 맞는 운송서비스를 제공합니다.
-        </p>
-        <div class="trans_ser_boxes">
-          <div class="trans_ser_boxes_4">
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_1.png">
-              <p>1톤 카고</p>
+    <div class="trans_ser_P">
+      <div class="trans_ser trans_ser_1">
+        <div class="trans_ser_L"><div class="trans_ser_img"></div></div>
+        <div class="trans_ser_R">
+          <b class="logi_ser_b">운송 서비스</b>
+          <p class="logi_ser_p logi_ser_p_1920">
+            운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
+            1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이<br> 고객 니즈에 맞는 운송서비스를 제공합니다.
+          </p>
+          <p class="logi_ser_p logi_ser_p_1280">
+            운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
+            1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이 고객 니즈에 맞는 운송서비스를 제공합니다.
+          </p>
+          <div class="trans_ser_boxes">
+            <div class="trans_ser_boxes_4">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_1.png">
+                <p>1톤 카고</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_2.png">
+                <p>1톤 탑차</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_3.png">
+                <p>1톤 냉장/냉동</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_4.png">
+                <p>1.5톤 윙바디</p>
+              </div>
             </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_2.png">
-              <p>1톤 탑차</p>
-            </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_3.png">
-              <p>1톤 냉장/냉동</p>
-            </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_4.png">
-              <p>1.5톤 윙바디</p>
-            </div>
-          </div>
-          <div class="trans_ser_boxes_4">
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_5.png">
-              <p>2톤</p>
-            </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_6.png">
-              <p>5톤</p>
-            </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_7.png">
-              <p>8톤</p>
-            </div>
-            <div class="trans_ser_box">
-              <img src="@/assets/images/ser_8.png">
-              <p>25톤</p>
+            <div class="trans_ser_boxes_4">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_5.png">
+                <p>2톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_6.png">
+                <p>5톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_7.png">
+                <p>8톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_8.png">
+                <p>25톤</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="trans_ser trans_ser_2">
-      <div class="trans_ser_L">
-        <b class="logi_ser_b">주선 서비스</b>
-        <p class="logi_ser_p logi_ser_p_1920">
-          로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해<br>
-          화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
-          또한, 실시간 상담원 배차 상황실 보유를 통해 보다 신속하고 정확한<br>
-          커뮤니케이션을 진행하고 있습니다.
-        </p>
-        <p class="logi_ser_p logi_ser_p_1280">
-          로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
-          화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
-          또한, 실시간 상담원 배차 상황실 보유를 통해 보다 신속하고 정확한
-          커뮤니케이션을 진행하고 있습니다.
-        </p>
-        <img class="trans_ser_sub_img" src="@/assets/images/transport3.png">
+      <div class="trans_ser trans_ser_2">
+        <div class="trans_ser_L">
+          <b class="logi_ser_b">주선 서비스</b>
+          <p class="logi_ser_p logi_ser_p_1920">
+            로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해<br>
+            화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
+            또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게<br>
+            고객대응을 하고 있습니다.
+          </p>
+          <p class="logi_ser_p logi_ser_p_1280">
+            로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
+            화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
+            또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게<br>
+            고객대응을 하고 있습니다.
+          </p>
+          <img class="trans_ser_sub_img" src="@/assets/images/transport3.png">
+        </div>
+        <div class="trans_ser_R">
+          <div class="trans_ser_img"></div>
+        </div>
       </div>
-      <div class="trans_ser_R">
-        <div class="trans_ser_img"></div>
+    </div>
+    <div class="trans_ser_T">
+      <div class="trans_ser trans_ser_1">
+        <div class="trans_ser_L"><div class="trans_ser_img"></div></div>
+        <div class="trans_ser_R">
+          <b class="logi_ser_b">운송 서비스</b>
+          <p class="logi_ser_p logi_ser_p_1920">
+            운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
+            1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이<br> 고객 니즈에 맞는 운송서비스를 제공합니다.
+          </p>
+          <p class="logi_ser_p logi_ser_p_1280">
+            운송, 보관, 패키지 등 기업물류에 필요한 모든 물류서비스를 제공합니다.<br>
+            1톤~25톤까지 다양한 차량으로 운송 가능하며, 화물의 종류와 상관없이 고객 니즈에 맞는 운송서비스를 제공합니다.
+          </p>
+          <div class="trans_ser_boxes">
+            <div class="trans_ser_boxes_3">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_1.png">
+                <p>1톤 카고</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_2.png">
+                <p>1톤 탑차</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_3.png">
+                <p>1톤 냉장/냉동</p>
+              </div>
+            </div>
+            <div class="trans_ser_boxes_3">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_4.png">
+                <p>1.5톤 윙바디</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_5.png">
+                <p>2톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_6.png">
+                <p>5톤</p>
+              </div>
+            </div>
+            <div class="trans_ser_boxes_3">
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_7.png">
+                <p>8톤</p>
+              </div>
+              <div class="trans_ser_box">
+                <img src="@/assets/images/ser_8.png">
+                <p>25톤</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trans_ser trans_ser_2">
+        <div class="trans_ser_L">
+          <b class="logi_ser_b">주선 서비스</b>
+          <p class="logi_ser_p logi_ser_p_1280">
+            로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
+            화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
+            또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게<br>
+            고객대응을 하고 있습니다.
+          </p>
+          <img class="trans_ser_sub_img" src="@/assets/images/transport3.png">
+        </div>
+        <div class="trans_ser_R">
+          <div class="trans_ser_img"></div>
+        </div>
       </div>
     </div>
     <div class="trans_ser_M">
@@ -545,10 +618,10 @@
   </div>
   <div class="logi_compititon">
     <b class="notice">로지웨이의 경쟁력</b>
-    <div class="logi_con">
+    <div class="logi_con logi_con_MP">
       <div class="logi_con_div">
-        <b  class="logi_con_div_1920">운송 전문<span>&nbsp;로지웨이</span> & 물류 플랫폼 <span>인성데이타</span></b>
-        <b  class="logi_con_div_1280">운송 전문<span>&nbsp;로지웨이</span> & <br>물류 플랫폼 <span>인성데이타</span></b>
+        <b class="logi_con_div_1920">운송 전문<span>&nbsp;로지웨이</span> & 물류 플랫폼 <span>인성데이타</span></b>
+        <b class="logi_con_div_1280">운송 전문<span>&nbsp;로지웨이</span> & <br>물류 플랫폼 <span>인성데이타</span></b>
         <p class="logi_con_div_1920">인성데이타의 기술력과 로지웨이의 화물 운송 노하우를<br> 결합하여 빈틈 없는 서비스를 제공하고 있어요.</p>
         <p class="logi_con_div_1280">인성데이타의 기술력과 로지웨이의 화물 운송 노하우를 결합하여 빈틈 없는 서비스를 제공하고 있어요.</p>
         <img src="@/assets/images/compotition_1.png">
@@ -556,17 +629,40 @@
       <div class="logi_con_div">
         <b class="logi_con_div_1920">AI를 통한 최적화 된<span> 배차 시스템</span></b>
         <b class="logi_con_div_1280">AI를 통한 최적화 된<span><br>배차 시스템</span></b>
-        <p class="logi_con_div_1920">전국 4,000여 개 협력사 네트워크망과<br> AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
-        <p class="logi_con_div_1280">전국 4,000여 개 협력사 네트워크망과 AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
+        <p class="logi_con_div_1920">전국 4,000여개 협력사 네트워크와<br> AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
+        <p class="logi_con_div_1280">전국 4,000여개 협력사 네트워크와 AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
         <img src="@/assets/images/compotition_2.png">
       </div>
       <div class="logi_con_div">
         <b class="logi_con_div_1920">고객을 만족시키는<span> 다양한 물류 서비스</span></b>
         <b class="logi_con_div_1280">고객을 만족시키는<span><br>다양한 물류 서비스</span></b>
-        <p class="logi_con_div_1920">소형부터 대형 화물까지<br> 크기와 특성에 제약 없이 모든 운송 지원이 가능해요.</p>
-        <p class="logi_con_div_1280">소형부터 대형 화물까지 크기와 특성에 제약 없이 모든 운송 지원이 가능해요.</p>
+        <p class="logi_con_div_1920">소형부터 대형 화물까지<br> 크기와 특성에 제약 없이 모든 화물 운송이 가능해요.</p>
+        <p class="logi_con_div_1280">소형부터 대형 화물까지 크기와 특성에 제약 없이 모든 화물 운송이 가능해요.</p>
         <img src="@/assets/images/compotition_3.png">
       </div>
+    </div>
+    <div class="logi_con logi_con_T">
+      <div class="logi_con_div">
+        <div class="logi_con_T_img"><img src="@/assets/images/compotition_1.png"></div>
+        <div class="logi_con_T_div">
+          <b class="logi_con_div_1280">운송 전문<span>&nbsp;로지웨이</span> & 물류 플랫폼 <span>인성데이타</span></b>
+          <p class="logi_con_div_1280">인성데이타의 기술력과 로지웨이의 화물 운송 노하우를 결합하여 빈틈 없는 서비스를 제공하고 있어요.</p>
+        </div>
+      </div>
+        <div class="logi_con_div">
+          <div class="logi_con_T_img"><img src="@/assets/images/compotition_2.png"></div>
+          <div class="logi_con_T_div">
+            <b class="logi_con_div_1280">AI를 통한 최적화 된<span> 배차 시스템</span></b>
+            <p class="logi_con_div_1280">전국 4,000여개 협력사 네트워크와 AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
+          </div>
+        </div>
+        <div class="logi_con_div">
+          <div class="logi_con_T_img"><img src="@/assets/images/compotition_3.png"></div>
+          <div class="logi_con_T_div">
+            <b class="logi_con_div_1280">고객을 만족시키는<span> >다양한 물류 서비스</span></b>
+            <p class="logi_con_div_1280">소형부터 대형 화물까지 크기와 특성에 제약 없이 모든 화물 운송이 가능해요.</p>
+          </div>
+        </div>
     </div>
   </div>
      <businesscontent @triggerFadeIn="contentfadein('third')" :persec="1"><div></div></businesscontent>
@@ -1286,7 +1382,7 @@ export default {
 .intro_L_1280{display:none;}
 .logi_intro_R{text-align: left; width: 595px;}
 .logi_intro_R b{color: var(--main-orange, #FF5819); font-size: 2.5rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -1.6px; margin-bottom:20px; display:block;}
-.logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; white-space: nowrap;}
+.logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; word-break:keep-all;}
 
 /* logi_history */
 .logi_history{padding: 120px 0;background: #5950EE;}
@@ -1611,8 +1707,12 @@ select::-ms-expand{display:none;}
   .logi_line_li_1280{display:none;}
   .notice_1280{display:none;}
   .trans_ser_M{display:none;}
+  .trans_ser_T{display:none;}
+  .trans_ser_P{display:block;}
   .notice_m_div{display:none;}
   .M_order{display:none;}
+  .notice_1280{display:none;}
+  .logi_con_T{display:none;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1643,6 +1743,8 @@ select::-ms-expand{display:none;}
 .logi_con>div img[data-v-5e2104ef] {width: 60%; height: auto; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
 .logi_service{padding: 218px 160px;}
 .trans_ser_M{display:none;}
+.trans_ser_T{display:none;}
+.trans_ser_P{display:block;}
 .trans_ser_1 .trans_ser_L{width: calc(55% - 30px);}
 .trans_ser_1 .trans_ser_R{width: calc(45% - 30px); float:right !important;}
 .trans_ser_2 .trans_ser_R{width: calc(55% - 30px);}
@@ -1656,7 +1758,9 @@ select::-ms-expand{display:none;}
 .logi_con_div_1280{display:none !important;}
 .logi_line_li_1920{display:list-item;}
 .logi_line_li_1280{display:none;}
-
+.M_order{display:none;}
+.notice_1280{display:none;}
+.logi_con_T{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1850px){
 .logi_con_div_1920{display:none !important;}
@@ -1664,8 +1768,8 @@ select::-ms-expand{display:none;}
 .logi_intro_L{width: -webkit-fill-available;}
 .logi_intro_R{text-align: left; width: 54vw;}
 .logi_line_li_1920{display:list-item;}
-  .logi_line_li_1280{display:none;}
-  .M_order{display:none;}
+.logi_line_li_1280{display:none;}
+.M_order{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
 
@@ -1679,7 +1783,7 @@ select::-ms-expand{display:none;}
 .swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
 .logi_intro_R_1280{display: none;}
 .logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
-.phrase_work_2{left: 200px; bottom: -8%;}
+.phrase_work_2{left: 40px; bottom: -8%;}
 .logi_line_div{min-height:272px;}
 .logi_ser_p_1920{display:none;}
 .logi_ser_p_1280{display:block;}
@@ -1747,9 +1851,9 @@ select::-ms-expand{display:none;}
 .swiper-slide{font-size: 0.938vw;}
 .swiper_txt b{font-size: 1.563vw;}
 .notice{font-size: 2.813vw;}
-.notice>span{font-size: 2.813vw !important;}
+.notice>span{font-size: 2.25rem !important;}
 /* .logi_history>.notice{font-size: 2.813vw;} */
-/* .logi_history>.notice span{font-siz               e: 2.813vw;} */
+/* .logi_history>.notice span{font-size: 2.813vw;} */
 .single_phrase_img{padding: 0 160px;}
 .logi_his_list{padding: 0 160px;}
 .pc_1920_txt{display: none;}
@@ -1766,15 +1870,14 @@ select::-ms-expand{display:none;}
 .logi_compititon{padding:120px 160px 180px 160px;}
 .logi_counseling_bg{overflow: hidden;padding:120px 160px;}
 .logi_con>div{width: calc(33.3% - 24px); position: relative;}
-.logi_con>div img[data-v-5e2104ef] {width: 60%; height: auto; position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
 .logi_service{padding: 218px 160px;}
 .trans_ser_1 .trans_ser_L{width: calc(55% - 30px);}
 .trans_ser_1 .trans_ser_R{width: calc(45% - 30px); float:right !important;}
 .trans_ser_2 .trans_ser_R{width: calc(55% - 30px);}
 .trans_ser_2 .trans_ser_L{width: calc(45% - 30px);}
-.logi_intro_R_1280{display: none;}
+
 .logi_ser_p_1280{display:none;}
-.logi_intro{padding: 160px 160px 200px 160px;}
+
 .counsel_div>input, textarea{width:100%;}
 .counsel_div{width: 45%;}
 .counsel_img{width: 40%; height: inherit;}
@@ -1792,7 +1895,7 @@ select::-ms-expand{display:none;}
 .swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
 .logi_intro_R_1280{display: none;}
 .logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
-.phrase_work_2{left: 200px; bottom: -8%;}
+
 .logi_line_div{min-height:272px;}
 .logi_ser_p_1920{display:none;}
 .logi_ser_p_1280{display:block;}
@@ -1807,7 +1910,6 @@ select::-ms-expand{display:none;}
 .counsel_btn{width:100%; display: block; margin-top:24px;}
 .part_swiper .swiper-slide img{width:210px !important; height:inherit; object-fit:contain;}
 .logi_line_div_img{top: -64%;}
-.logi_intro_R p{font-size: 1.125rem;}
 
 .logo_intro_txt .logo_intro_t1{margin-right: 0;}
 .logo_intro_txt .logo_intro_t{width: 100%;}
@@ -1817,7 +1919,7 @@ select::-ms-expand{display:none;}
 .bg_1920{display: none;}
 .bg_1280{display: flex;}
 .phrase_work_1{left: 100px;}
-
+.phrase_work_2{left: 200px; bottom: -8%;}
 .phrase_work_3{right: 133px;}
 .logo_intro .logostory{padding: 80px 160px;}
 .logo_intro_txt .logo_intro_t2{margin-top: 37px;}
@@ -1859,18 +1961,165 @@ select::-ms-expand{display:none;}
 .com_pro_com .com_pro_b{font-size: 2rem;}
 .com_pro_com .com_pro_shape{width: inherit; height:480px;}
 
-}``
+}
 
-@media all and (min-width:768px) and (max-width:1279px) {
+@media all and (min-width:768px) and (max-width:1280px) {
+/* common */
+.notice{font-size: 2.25rem; font-weight: 700;letter-spacing: -0.04em; text-align: center;}
+
 /* logi_intro */
 .logi_intro{padding: 80px 48px 100px 48px;}
 .logi_intro_con{overflow:hidden; display: block; width: 100%;  height: auto; }
 .logi_intro_con div{display: block; width: 100%;}
-.logi_intro_L{ height:260px; margin-right: 0px; background: url(@/assets/images/inrtroduce.png) no-repeat center #F2F3F7; background-size:contain; border-radius: 20px; padding: 40px 60px;}
-.intro_L_1280{display:none;}
-.logi_intro_R{text-align: left; width: 595px;}
-.logi_intro_R b{color: var(--main-orange, #FF5819); font-size: 2.5rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -1.6px; margin-bottom:20px; display:block;}
-.logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; white-space: nowrap;}
+.logi_intro_L{height:auto; margin-right: 0px; background: transparent; padding: 0; margin-bottom:32px;}
+.intro_L_1280{display:block; width:100%; height:auto;}
+.logi_intro_R_1280{display:block;}
+.logi_intro_R_1920{display:none;}
+.logi_intro_R{text-align: center; width: 100%;}
+.logi_intro_R b{color: var(--main-orange, #FF5819); font-size: 2.25rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -1.6px; margin-bottom:16px; display:block;}
+.logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; }
+
+/* single_phrase */
+.single_phrase{padding:84px 0 100px 0;}
+.single_bg{}
+.M_order{display:none;}
+.notice_1280{display:none;}
+.single_phrase_img{padding:0;}
+.phrase_work{width: 190px; padding: 10px; border-radius: 12px; padding:10px;}
+.phrase_work b{font-size:1rem;}
+.phrase_work p{font-size:0.875rem;}
+.phrase_work img{width:100px;}
+
+.phrase_work:hover{border: 2px solid; width:190px; transition: 0.1s ease-in-out;}
+.phrase_work_1:hover{border-color:#009FDA;;}
+.phrase_work_2:hover{border-color:#FAAC18;}
+.phrase_work_3:hover{border-color:#E20613;}
+.introfade_btn{font-size:0.875rem; padding:8px 16px;}
+.single_phrase_img .car{left: 65%; top: 43.2%;}
+.single_phrase_img .car2{left: 38%; top: 36%;}
+.phrase_work_1{left: 100px;}
+.phrase_work_3{right: 133px;}
+.phrase_work_2{left: 80px; bottom: 4%;}
+
+/* logi_history */
+.logi_history{}
+.logi_history{}
+.notice>span{font-size: 2.25rem !important;}
+.logi_line_ul b{font-size: 1.625rem; margin-bottom:24px;}
+.logi_line_li_1920{display:none;}
+.logi_his_list{padding:0 48px;}
+.logi_line_div{width:calc(25% - 9px); min-height:282px; }
+.logi_line_div_txt{margin-top:28px;width:90%;}
+.logi_line_div_img{top:-64%;}
+
+/* logo_intro */
+.logo_intro{padding:100px 48px 120px 48px;}
+.logo_intro .logostory{padding:56px 0px;}
+.logo_intro_txt{padding:0;}
+.logo_intro_txt .logo_intro_t1{margin-right:0; width:100%; margin-bottom:0;}
+.logo_intro_txt .logo_intro_t2{width:100%; margin-top:56px;}
+.main_color{width: calc(50% - 10px);height: 300px;}
+.logo_intro_t1 div{width:100%;}
+.logo_intro_t1 div p{text-align:center; font-size:1rem; margin-top:48px;}
+.filebox{margin-top:56px;}
+
+/* logi_work */
+.logi_work{padding:80px 0;}
+.logi_work_con{margin-top:240px;}
+.logi_work_img{width:300px;}
+.logi_work_img_main{width: 100%; height: inherit;}
+
+.logi_work_sub{}
+.logi_work_sub_img{}
+.logi_work_sub_img img{width: 80px; height: 80px;}
+.logi_work_sub_img p{font-size:1rem; width:124px;}
+.sub_img_1{}
+.sub_img_2{}
+.sub_img_3{}
+.sub_img_4{}
+.logi_txt{font-size:1.125rem; width:353px; margin-top:40px;}
+.sub_img_1{left: -210px; top: -40px;}
+.sub_img_1::after{display:none;}
+.sub_img_2{ left: -124px; top: -160px;}
+.sub_img_2::after{display:none;}
+.sub_img_3{ right: -124px; top: -160px;}
+.sub_img_3::after{display:none;}
+.sub_img_4{right: -210px; top: -40px;}
+.sub_img_4::after{display:none;}
+
+/* logi_service */
+.trans_ser_P{display: none;}
+.trans_ser_T{display:block;}
+.trans_ser_M{display:none;}
+.logi_service{padding:120px 48px 140px 48px;}
+.trans_ser_L{width:calc(55% - 30px)}
+.trans_ser_R{width:calc(45% - 30px)}
+.trans_ser_boxes_3{display: flex; justify-content: center; width:100%; margin-bottom:12px;}
+.trans_ser_box{width: calc(33.3% - 12px) !important; height: auto; margin-right:12px;}
+.trans_ser_box img{margin:0 12px;}
+.trans_ser_box p{font-size:0.75rem;}
+.trans_ser_boxes_3:last-child{margin-bottom:0px;}
+.logi_ser_p_1920{display:none;}
+.logi_ser_b{font-size:2rem;}
+.logi_ser_p{font-size:1rem;}
+.trans_ser_2{margin-top:140px;}
+.trans_ser_img{height:inherit;}
+.trans_ser_sub_img{width:100%;}
+.trans_ser_2 .trans_ser_L{width:calc(45% - 30px);}
+.trans_ser_2 .trans_ser_R{width:calc(55% - 30px);} 
+
+/* logi_compititon */
+.logi_compititon{padding:80px 48px 80px 48px;}
+.logi_compititon>.notice{margin-bottom:56px;}
+.logi_con{flex-wrap: wrap;}
+.logi_con_div{}
+.logi_con>div{width:auto; height:inherit; margin-right:0; padding: 32px 48px; display:flex; align-items:center; margin-bottom:20px;}
+.logi_con>div:last-child{margin-bottom:0px;}
+.logi_con>div b{font-size: 1.25rem; font-weight: 700; line-height: 30px; letter-spacing: -0.04em; text-align: left;}
+.logi_con>div b span{font-size: 1.25rem;}
+.logi_con>div p{font-size: 1rem; font-weight: 400; letter-spacing: -0.04em; text-align: left; margin-top:16px; }
+.logi_con>div img{width:130px; height:inherit; margin-top:0px;}
+.logi_con_div_1920{display:none !important;}
+.logi_con_T{display:block;}
+.logi_con_MP{display:none;}
+.logi_con_T_img{width:auto; margin-right:48px;}
+.logi_con_T_div{width:auto;}
+
+/* logi_partner */
+.logi_partner{margin-top:100px; padding-top:0px;}
+.partner_swiper{display:none; margin:56px 0 140px 0;}
+.part_swiper{height:inherit;}
+.part_swiper .swiper-slide{height:inherit;}
+.partner_swiper_M{display:block; margin:48px 0 100px 0;}
+.part_swiper .swiper-slide img{width:80% !important;}
+
+/* logi_counseling_bg */
+.logi_counseling_bg{padding:88px 110px 80px 110px;}
+.counsel_img_M{display: block; width: 100%; margin-bottom: 40px; padding: 0 134px;}
+.logi_counseling_b{width:100%; font-size: 2.25rem; font-weight: 700; letter-spacing: -0.04em; text-align: center;}
+.logi_counseling_p{width:100%; margin-top:16px; font-size: 1rem;letter-spacing: -0.04em; text-align: center;}
+.counsel_con{display:block;}
+.counsel_div{width: 100%; margin-top:32px;}
+.counsel_div>input{width: 100%; font-size:1rem;}
+.counsel_div>input::placeholder, textarea::placeholder{font-size:1rem;}
+.counsel_div textarea{width: 100%; font-size:1rem;}
+.counsel_div_p{font-size:0.875rem;}
+.counsel_img{display:none;}
+.check_div{display: flex; align-items: center; justify-content: space-between;}
+.counsel_btn{margin-top:0px; color: #FFF; text-align: center; height: 60px; font-size: 1.25rem;font-weight: 500; line-height: 150%; letter-spacing: -1.04px; padding: 0px 30px; width:212px;border-radius: 10px; background: #D1D1D1;}
+/* footer */
+footer{background: var(--main-navy, #262E40); padding: 100px 160px; text-align:left;}
+.footer_M{display:none;}
+.footer_img{width: 264px; margin-bottom: 40px;}
+.footer_p p{color: #8B95A1; font-size: 1rem;font-weight: 500; line-height: 220%; letter-spacing: -0.64px;}
+footer ul{width: 100%; display: block; overflow: hidden; margin-bottom:40px;}
+footer ul li{float:left; font-weight:bold; color:#fff; padding-right:40px; font-size:1.125rem; cursor: pointer;}
+.footer_txt{color: #8B95A1; margin-top:22px; display: flex; justify-content: space-between; align-items: flex-end;}
+.footer_txt p{color: #8B95A1;}
+.footer_txt select{-webkit-appearance:none; -moz-appearance:none; appearance:none; background:url(../../../src/assets/images/arrow.png) no-repeat 95% 50% #262E40; background-size: 20px 20px; color: #999; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 160%; letter-spacing: -0.64px;width: 226px; padding: 16px;  border-radius: 8px; border: 1px solid #8B95A1; height: 56px;;}
+select::-ms-expand{display:none;}
+.footer_txt select option{}
+
 }
 
 
@@ -1881,7 +2130,8 @@ select::-ms-expand{display:none;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .notice{font-size:1.5rem;}
 /* main_bg */
-  .swiper_bg{    display: block;
+  .swiper_bg{
+    display: block;
     width: 100%;
     height: auto;
     padding: 0 20px;
@@ -2044,7 +2294,8 @@ select::-ms-expand{display:none;}
 
 /* logi_service */
 .logi_service{padding:80px 20px;}
-.trans_ser{display: none;}
+.trans_ser_P{display: none;}
+.trans_ser_T{display: none;}
 .trans_ser_M{display:block;}
 .trans_ser_M_box{}
 .trans_ser_M_box img{width:100%; height:auto; border-radius:10px; margin:40px 0 32px 0;}
@@ -2062,6 +2313,7 @@ select::-ms-expand{display:none;}
 .logi_compititon{padding:60px 20px 80px 20px;}
 .logi_compititon>.notice{margin-bottom:48px;}
 .logi_con{flex-wrap: wrap;}
+.logi_con_T{display:none;}
 .logi_con_div{}
 .logi_con>div{width:100%; height:inherit; margin-right:0; padding: 32px 24px; margin-bottom:20px;}
 .logi_con>div:last-child{margin-bottom:0px;}
