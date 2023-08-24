@@ -153,7 +153,7 @@
               </a>
             </transition>
           </div>
-          <div class="notice_1280">
+          <!-- <div class="notice_1280">
             <div class="notice_m_div">
               <a href="https://www.insungdata.com/" target="_blank" class="phrase_work_1 phrase_work" v-show="introshow">
                 <img src="@/assets/images/insung.png">
@@ -183,7 +183,7 @@
                 <button class="introfade_btn">홈페이지 바로가기</button>
               </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </introobserver>
@@ -1255,7 +1255,7 @@ export default {
 .phrase_work:hover{border: 4px solid; width:304px; transition: 0.1s ease-in-out;}
 .phrase_work_1:hover{border-color:#009FDA; }
 .phrase_work_1:hover .introfade_btn{background: #009FDA; color: #fff; transition: 0.1s ease-in-out;}
-.phrase_work_2:hover{border-color:#FAAC18; bottom: 13%; left: 13%;}
+.phrase_work_2:hover{border-color:#FAAC18; }
 .phrase_work_2:hover .introfade_btn{background: #FAAC18; color: #fff; transition: 0.1s ease-in-out;}
 .phrase_work_3:hover{border-color:#E20613;}
 .phrase_work_3:hover .introfade_btn{background: #E20613; color: #fff; transition: 0.1s ease-in-out;}
@@ -1665,6 +1665,7 @@ select::-ms-expand{display:none;}
 .logi_intro_R{text-align: left; width: 54vw;}
 .logi_line_li_1920{display:list-item;}
   .logi_line_li_1280{display:none;}
+  .M_order{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
 
@@ -1697,6 +1698,7 @@ select::-ms-expand{display:none;}
 .logi_line_li_1920{display:none;}
 .logi_line_li_1280{display:list-item;}
 .trans_ser_img{border-radius: 20px;width: 100%; height: inherit;}
+.M_order{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1500px){
 
@@ -1715,6 +1717,7 @@ select::-ms-expand{display:none;}
 .color_orange{margin-right: 0;}
 .color_navy{float:right;}
 .main_color{width: calc(50% - 10px); height: 300px;}
+
 @keyframes car {
 	0% {transform: translate(0px,0px);opacity: 0%;}
 	40%{opacity: 100%;}
@@ -1839,10 +1842,14 @@ select::-ms-expand{display:none;}
   60%{opacity: 0%;}
 	100% {transform: translate(-240px,140px);opacity: 0%;}
 }
+.M_order{display:none;}
 }
 @media all and (min-width:1023px) and (max-width:1279px){
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .com_pro_com_2{margin: 0 60px;}
+
+
+
 
 }
 
@@ -1852,7 +1859,20 @@ select::-ms-expand{display:none;}
 .com_pro_com .com_pro_b{font-size: 2rem;}
 .com_pro_com .com_pro_shape{width: inherit; height:480px;}
 
+}``
+
+@media all and (min-width:768px) and (max-width:1279px) {
+/* logi_intro */
+.logi_intro{padding: 80px 48px 100px 48px;}
+.logi_intro_con{overflow:hidden; display: block; width: 100%;  height: auto; }
+.logi_intro_con div{display: block; width: 100%;}
+.logi_intro_L{ height:260px; margin-right: 0px; background: url(@/assets/images/inrtroduce.png) no-repeat center #F2F3F7; background-size:contain; border-radius: 20px; padding: 40px 60px;}
+.intro_L_1280{display:none;}
+.logi_intro_R{text-align: left; width: 595px;}
+.logi_intro_R b{color: var(--main-orange, #FF5819); font-size: 2.5rem; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -1.6px; margin-bottom:20px; display:block;}
+.logi_intro_R p{width:100%; color: var(--main-navy, #262E40); font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 160%; letter-spacing: -0.72px; white-space: nowrap;}
 }
+
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:768px) {
