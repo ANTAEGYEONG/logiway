@@ -10,7 +10,7 @@
             clickable: true,
           }"
           :autoplay="{
-            delay: 5000,
+            delay: 50000,
             disableOnInteraction: false,
           }"
           :navigation="true"
@@ -465,13 +465,13 @@
             로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해<br>
             화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
             또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게<br>
-            고객대응을 하고 있습니다.
+            고객 대응을 하고 있습니다.
           </p>
           <p class="logi_ser_p logi_ser_p_1280">
             로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
             화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
             또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게<br>
-            고객대응을 하고 있습니다.
+            고객 대응을 하고 있습니다.
           </p>
           <img class="trans_ser_sub_img" src="@/assets/images/transport3.png">
         </div>
@@ -838,6 +838,31 @@
         </select>
       </div>
     </div>
+    <div class="footer_T">
+      <img class="footer_img" src="@/assets/images/logo_w.png">
+      <ul>
+        <li @click="private">개인정보처리방침</li>
+      </ul>
+      <div class="footer_p">
+        <div class="footer_p">
+          <p>로지웨이 주식회사</p>
+          <p>대표 : 이윤조</p>
+          <p>주소 : 경기도 안양시 동안구 평촌대로 239, 4층 421호(비산동, 신안메트로칸)</p>
+          <p>사업자등록번호 : 520-86-00639</p>
+          <p>메일 : logiway@logiway.co.kr</p>
+        </div>
+      </div>
+      <div class="footer_txt">
+        <p>© 2023 LOGIWAY. All Rights Reserved</p>
+        <select @change="familysitechange($event)">
+          <option value="0">FAMILY SITE</option>
+          <option value="1">인성데이타</option>
+          <option value="2">로지올</option>
+          <option value="3">바이크뱅크</option>
+          <option value="4">닷스테이션</option>
+        </select>
+      </div>
+    </div>
     <div class="footer_M">
       <img class="footer_img" src="@/assets/images/logo_w.png">
       <div class="footer_p">
@@ -1190,7 +1215,7 @@ export default {
 .notice{ display: block; width: 100%; color: var(--black-text, #262E40); text-align: center; font-size: 3.375rem; text-align: center; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_history>.notice{color: var(--black-text, #fff); margin-bottom:80px; }
 .logi_history>.notice span{color: var(--black-text, #FF5819); font-size: 3.375rem; }
-.up_arrow{position: absolute; top: 50%; transform: translateY(-50%); right: 6%; z-index: 1;}
+.up_arrow{position: absolute; bottom: 10%; right: 6%; z-index: 1;}
 .up_arrow img{width:60px; height:60px;}
 /* swiper */
 
@@ -1239,7 +1264,7 @@ export default {
 }
 .swiper_bg2_sub{position: absolute;	animation: bubble 3s ease-in-out infinite;}
 .swiper_bg2_sub_1{width: 140px; height: inherit; right:30%; top:8%;}
-.swiper_bg2_sub_2{width: 140px; height: inherit; left: 0%; top: 22%; animation: bubble2 3s ease-in-out infinite;}
+.swiper_bg2_sub_2{width: 140px; height: inherit; left: -7%; top: 22%; animation: bubble2 3s ease-in-out infinite;}
 .swiper_bg2_sub_3{width: 168.457px; height: inherit; left:-10%; top:42%;}
 @keyframes bubble {
 	0% {
@@ -1715,6 +1740,9 @@ select::-ms-expand{display:none;}
   .M_order{display:none;}
   .notice_1280{display:none;}
   .logi_con_T{display:none;}
+  .footer_P{display:block;}
+  .footer_T{display:none;}
+  .footer_M{display:none;}
 }
 /* 구PC */
 @media all and (min-width:1280px) and (max-width:1920px){
@@ -1772,6 +1800,9 @@ select::-ms-expand{display:none;}
 .logi_line_li_1920{display:list-item;}
 .logi_line_li_1280{display:none;}
 .M_order{display:none;}
+.footer_P{display:block;}
+.footer_T{display:none;}
+.footer_M{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1624px){
 
@@ -1861,7 +1892,7 @@ select::-ms-expand{display:none;}
 .pc_1920_txt{display: none;}
 .pc_1280_txt{display: block;}
 .com_pro_com_2{margin: 0 120px;}
-.logo_intro_txt{padding: 0 160px;}
+.logo_intro_txt{padding: 0 140px;}
 .com_pro_com .com_pro_shape{width: inherit; height:705px;}
 .logi_line_ul b{font-size: 2.292vw;}
 .logo_intro_t1 div{padding: 64px 29px 38px 29px; max-width:640px; width:auto; height: 300px;}
@@ -1969,6 +2000,73 @@ select::-ms-expand{display:none;}
 /* common */
 .notice{font-size: 2.25rem; font-weight: 700;letter-spacing: -0.04em; text-align: center;}
 .up_arrow{display:none;}
+
+  /* main_bg */
+  .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out;}
+.bg_txt b{justify-content: center;}
+.bg_txt_b b{font-size: 2.875rem;}
+.bg_txt_b p{font-weight:bold;font-size: 2.875rem;}
+.bg_txt_p{font-size: 1.125rem; text-align:center; margin-top:32px;}
+.swiper_bg_img{margin-top:72px; width:auto;}
+.swiper_bg_img .swiper_bg_main1{width: 50%;}
+.swiper_bg_img .swiper_bg_main2{width: 50%;}
+.swiper_bg_img .swiper_bg_main3{width: 50%;}
+.swiper_bg2_sub_3{}
+.swiper_bg_img .swiper_bg_sub{width: 6%; left:40%; top:7%;}
+.swiper_bg2_sub_1{width: 10%; height: inherit; right:26%; top:8%;}
+.swiper_bg2_sub_2{width: 10%; height: inherit; left: 23%; top: 12%; animation: bubble2 3s ease-in-out infinite;}
+.swiper_bg2_sub_3{width: 14%; height: inherit; left:13%; top:42%;}
+.swiper_bg3_sub_4{width: 10%; height: inherit; left:40%; bottom:22%;}
+.swiper_bg3_sub_5{width: 10%; height: inherit; left: 50%; top: 44%; animation: speech2 3s ease-in-out infinite;}
+.swiper_bg3_sub_6{width: 10%; height: inherit; right:30%; top:16%; }
+.swiper_bg3_sub_7{width: 10%; height: inherit; left:43%; top:-2%; animation: speech2 3s ease-in-out infinite;}
+
+@keyframes speech1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes speech2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes bubble {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translate(-10px, -10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes bubble2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 /* logi_intro */
 .logi_intro{padding: 80px 48px 100px 48px;}
 .logi_intro_con{overflow:hidden; display: block; width: 100%;  height: auto; }
@@ -2122,6 +2220,11 @@ footer ul li{float:left; font-weight:bold; color:#fff; padding-right:40px; font-
 select::-ms-expand{display:none;}
 .footer_txt select option{}
 
+.footer_P{display:none;}
+.footer_T{display:block;}
+.footer_M{display:none;}
+
+
 }
 
 
@@ -2132,14 +2235,9 @@ select::-ms-expand{display:none;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .notice{font-size:1.5rem;}
   .up_arrow{display:none;}
-/* main_bg */
-  .swiper_bg{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0 20px;
-    animation: swiper-5e2104ef 1s ease-in-out;
-}
+
+  /* main_bg */
+  .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out;}
 .bg_txt b{justify-content: center;}
 .bg_txt_b b{font-size: 1.75rem;}
 .bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
@@ -2365,6 +2463,9 @@ footer ul li{font-size:1rem; margin-top:20px;}
 .footer_M select{width:100%; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url(../../../src/assets/images/arrow.png) no-repeat 95% 50% #262E40; background-size: 20px 20px; color: #999; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 160%; letter-spacing: -0.64px; padding: 14px 16px;  border-radius: 8px; border: 1px solid #8B95A1; height: 56px;;}
 select::-ms-expand{display:none;}
 .footer_M select option{}
+.footer_P{display:none;}
+.footer_T{display:none;}
+.footer_M{display:block;}
 
 /* M_order */
 .M_order{z-index:1; box-shadow: 1px 1px 10px 0px #0000001A; display: block;left: 0;bottom: 0;width: 100%;height: 52px;border-radius: 10px 10px 0px 0px;background: #5950EE;font-size: 1rem;font-weight: 400;letter-spacing: -0.04em;text-align: center;position: fixed;color: #fff;line-height: 52px;}
