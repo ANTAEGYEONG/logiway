@@ -861,6 +861,7 @@
     </div>
   </footer>
     <div class="M_order" @click="clickcontent('estimate')">문의하기</div>
+    <div class="up_arrow"><img src="@/assets/images/up_arrow.png"></div>
   </div>
 </template>
 
@@ -1189,7 +1190,8 @@ export default {
 .notice{ display: block; width: 100%; color: var(--black-text, #262E40); text-align: center; font-size: 3.375rem; text-align: center; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_history>.notice{color: var(--black-text, #fff); margin-bottom:80px; }
 .logi_history>.notice span{color: var(--black-text, #FF5819); font-size: 3.375rem; }
-
+.up_arrow{position: absolute; top: 50%; transform: translateY(-50%); right: 6%; z-index: 1;}
+.up_arrow img{width:60px; height:60px;}
 /* swiper */
 
 .introfade-enter-active,
@@ -1966,7 +1968,7 @@ select::-ms-expand{display:none;}
 @media all and (min-width:768px) and (max-width:1280px) {
 /* common */
 .notice{font-size: 2.25rem; font-weight: 700;letter-spacing: -0.04em; text-align: center;}
-
+.up_arrow{display:none;}
 /* logi_intro */
 .logi_intro{padding: 80px 48px 100px 48px;}
 .logi_intro_con{overflow:hidden; display: block; width: 100%;  height: auto; }
@@ -2108,7 +2110,7 @@ select::-ms-expand{display:none;}
 .check_div{display: flex; align-items: center; justify-content: space-between;}
 .counsel_btn{margin-top:0px; color: #FFF; text-align: center; height: 60px; font-size: 1.25rem;font-weight: 500; line-height: 150%; letter-spacing: -1.04px; padding: 0px 30px; width:212px;border-radius: 10px; background: #D1D1D1;}
 /* footer */
-footer{background: var(--main-navy, #262E40); padding: 100px 160px; text-align:left;}
+footer{background: var(--main-navy, #262E40); padding: 100px 48px; text-align:left;}
 .footer_M{display:none;}
 .footer_img{width: 264px; margin-bottom: 40px;}
 .footer_p p{color: #8B95A1; font-size: 1rem;font-weight: 500; line-height: 220%; letter-spacing: -0.64px;}
@@ -2129,6 +2131,7 @@ select::-ms-expand{display:none;}
   .com_pro_com_2{margin: 0 30px;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .notice{font-size:1.5rem;}
+  .up_arrow{display:none;}
 /* main_bg */
   .swiper_bg{
     display: block;
