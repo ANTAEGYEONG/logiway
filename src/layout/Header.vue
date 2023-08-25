@@ -4,7 +4,7 @@
         <div class="head_left" @click="clickcontent('top')">
             <img src="@/assets/images/logo.png">
         </div>
-        <ul class="head_right" v-show="$route.name === 'Home'">
+        <ul class="head_right">
           <li :class="{'click_hd' : scrollsection == 'main'}" @click="clickcontent('top')">HOME</li><!--10%-->
           <li :class="{'click_hd' : scrollsection == 'second'}" @click="clickcontent('intro')">회사소개</li><!--45%-->
           <li :class="{'click_hd' : scrollsection == 'third'}" @click="clickcontent('business')">사업소개</li> <!--86.9%-->

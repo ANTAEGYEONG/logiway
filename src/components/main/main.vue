@@ -10,7 +10,7 @@
             clickable: true,
           }"
           :autoplay="{
-            delay: 50000,
+            delay: 5000,
             disableOnInteraction: false,
           }"
           :navigation="true"
@@ -627,8 +627,8 @@
         <img src="@/assets/images/compotition_1.png">
       </div>
       <div class="logi_con_div">
-        <b class="logi_con_div_1920">AI를 통한 최적화 된<span> 배차 시스템</span></b>
-        <b class="logi_con_div_1280">AI를 통한 최적화 된<span><br>배차 시스템</span></b>
+        <b class="logi_con_div_1920">AI를 통한 최적화된<span> 배차 시스템</span></b>
+        <b class="logi_con_div_1280">AI를 통한 최적화된<span><br>배차 시스템</span></b>
         <p class="logi_con_div_1920">전국 4,000여개 협력사 네트워크와<br> AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
         <p class="logi_con_div_1280">전국 4,000여개 협력사 네트워크와 AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
         <img src="@/assets/images/compotition_2.png">
@@ -652,7 +652,7 @@
         <div class="logi_con_div">
           <div class="logi_con_T_img"><img src="@/assets/images/compotition_2.png"></div>
           <div class="logi_con_T_div">
-            <b class="logi_con_div_1280">AI를 통한 최적화 된<span> 배차 시스템</span></b>
+            <b class="logi_con_div_1280">AI를 통한 최적화된<span> 배차 시스템</span></b>
             <p class="logi_con_div_1280">전국 4,000여개 협력사 네트워크와 AI를 기반으로 효율적인 배차를 경험할 수 있어요.</p>
           </div>
         </div>
@@ -886,7 +886,7 @@
     </div>
   </footer>
     <div class="M_order" @click="clickcontent('estimate')">문의하기</div>
-    <div class="up_arrow" @click="clickcontent('top')">
+    <div class="up_arrow" @click="clickcontent('top')" v-show="scrollstore.getscrollsection != 'main'">
       <img src="@/assets/images/up_arrow.png">
     </div>
   </div>
