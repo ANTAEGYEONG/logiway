@@ -1152,7 +1152,7 @@ export default {
           "contents": vm.content
         }
 
-        let encrypted = CryptoJS.AES.encrypt(JSON.stringify(jsondata),"b'F3HF-n_5-B9vnwVQvtCL7QBuSglEF8pEUXZ7zA4WAps='").toString()
+        let encrypted = CryptoJS.AES.encrypt(JSON.stringify(jsondata),"b'0123456789abcdef0123456789abcdef'").toString()
 
         //console.log(encrypted)
 
@@ -1160,7 +1160,7 @@ export default {
           "enc_data" : encrypted
         }
 
-        mailAPI.sendmail(jsondata2).then((response) => {
+        mailAPI.sendmail(jsondata).then((response) => {
           //console.log("response : ",response)
 
           if(response.data.status == "true"){
