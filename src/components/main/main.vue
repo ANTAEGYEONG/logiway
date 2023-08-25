@@ -680,6 +680,8 @@
           reverseDirection: false,
         }"
         :speed="5000"
+        :observer = "true"
+        :observeParents = "true"
         :modules="modules"
         class="mySwiper part_swiper"
       >
@@ -705,7 +707,9 @@
           reverseDirection: true,
         }"
         :modules="modules"
-        :speed="4000"
+        :speed="5000"
+        :observer = "true"
+        :observeParents = "true"
         class="part_swiper mySwiper"
       >
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-11.png"></swiper-slide>
@@ -729,6 +733,8 @@
           reverseDirection: true,
         }"
         :speed="5000"
+        :observer = "true"
+        :observeParents = "true"
         :modules="modules"
         class="part_swiper mySwiper"
       >
@@ -750,6 +756,8 @@
           reverseDirection: false,
         }"
         :speed="5000"
+        :observer = "true"
+        :observeParents = "true"
         :modules="modules"
         class="mySwiper part_swiper"
         >
@@ -771,7 +779,9 @@
             reverseDirection: true,
           }"
           :modules="modules"
-          :speed="4000"
+          :speed="5000"
+          :observer = "true"
+          :observeParents = "true"
           class="part_swiper mySwiper"
         >
           <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-12.png"></swiper-slide>
@@ -1252,7 +1262,7 @@ export default {
 .swiper_bg_img .swiper_bg_main1{width: 800px;}
 .swiper_bg_img .swiper_bg_main2{width: 780px;}
 .swiper_bg_img .swiper_bg_main3{width: 830px;}
-.swiper_bg_img .swiper_bg_sub{position: absolute; left: 29%; top: 8%; width: 96px; height: inherit;	animation: float 4s ease-in-out infinite;}
+.swiper_bg_img .swiper_bg_sub{position: absolute; left: 29%; top: 7%; width: 96px; height: inherit;	animation: float 4s ease-in-out infinite;}
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -1266,8 +1276,8 @@ export default {
 }
 .swiper_bg2_sub{position: absolute;	animation: bubble 3s ease-in-out infinite;}
 .swiper_bg2_sub_1{width: 140px; height: inherit; right:30%; top:8%;}
-.swiper_bg2_sub_2{width: 140px; height: inherit; left: -7%; top: 22%; animation: bubble2 3s ease-in-out infinite;}
-.swiper_bg2_sub_3{width: 168.457px; height: inherit; left:-10%; top:42%;}
+.swiper_bg2_sub_2{width: 140px; height: inherit; left: -3%; top: 22%; animation: bubble2 3s ease-in-out infinite;}
+.swiper_bg2_sub_3{width: 168.457px; height: inherit; left:-8%; top:43%;}
 @keyframes bubble {
 	0% {
 		transform: translatey(0px);
@@ -1291,8 +1301,8 @@ export default {
 	}
 }
 .swiper_bg3_sub{position: absolute;	animation: speech1 3s ease-in-out infinite;}
-.swiper_bg3_sub_4{width: 140.268px; height: inherit; left:30%; bottom:22%;}
-.swiper_bg3_sub_5{width: 140.268px; height: inherit; left: 46%; top: 44%; animation: speech2 3s ease-in-out infinite;}
+.swiper_bg3_sub_4{width: 140.268px; height: inherit; left:34%; bottom:22%;}
+.swiper_bg3_sub_5{width: 140.268px; height: inherit; left: 46%; top: 42%; animation: speech2 3s ease-in-out infinite;}
 .swiper_bg3_sub_6{width: 166.133px; height: inherit; right:8%; top:16%; }
 .swiper_bg3_sub_7{width: 136.27px; height: inherit; left:43%; top:-2%; animation: speech2 3s ease-in-out infinite;}
 @keyframes speech1 {
@@ -1321,7 +1331,7 @@ export default {
 .bg_txt_b>b{float:left; font-family: 'NexonLv1Gothic'; font-weight:bold; color: var(--main-navy, #262E40); font-size: 4rem;line-height: 145%; letter-spacing: -2.56px;
 }
 .bg_txt_b p{color: var(--main-navy, #262E40); font-family: 'NexonLv1Gothic'; font-size: 4rem; font-style: normal; font-weight: 100; line-height: 145%; letter-spacing: -2.72px;}
-.bg_txt_p{margin-top:32px; margin-left: 6px; color: var(--main-navy, #262E40);  font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: -1px;}
+.bg_txt_p{margin-top:32px; margin-left: 4px; color: var(--main-navy, #262E40);  font-size: 1.125rem; font-style: normal; font-weight: 400; line-height: 180%; letter-spacing: -1px;}
 .bg_txt b{font-size: 4rem; display: flex; font-style: normal; overflow: hidden; text-align: left; width: 100%; font-family: 'NexonLv1Gothic'; font-weight: 700;align-items: center;}
 .bg_txt p{}
 .bg_txt button{width: 247px;}
@@ -1400,8 +1410,8 @@ export default {
 .phrase_work b{color: #000; text-align: center; font-size: 1.25rem;font-weight: 700; line-height: 150%;letter-spacing: -0.8px; padding-bottom: 8px; display: block;}
 .phrase_work p{color: #000; text-align: center; font-size: 1.125rem; font-weight: 400; line-height: 160%; letter-spacing: -1.2px;}
 .phrase_work_1{top: 13%; left: 11%;}
-.phrase_work_2{bottom: 14%; left: 13%;}
-.phrase_work_3{top: 21%; right: 233px;}
+.phrase_work_2{top: 70%; left: 13%;}
+.phrase_work_3{top: 190px; right: 233px;}
 
 /* logi_intro */
 .logi_intro{padding: 160px 160px 200px 160px;}
@@ -1604,7 +1614,8 @@ export default {
 .trans_ser_2{margin-top: 215px;}
 .trans_ser div{display:inline-block; float:left; text-align: left; }
 .trans_ser_1 .trans_ser_L{width:calc(60% - 60px);}
-.trans_ser_2 .trans_ser_R{width:calc(60% - 60px);}
+.trans_ser_2 .trans_ser_R{width:calc(55% - 30px);}
+.trans_ser_2 .trans_ser_L{width:calc(45% - 30px);}
 .trans_ser_1 .trans_ser_L{background:url(@/assets/images/transport.png) no-repeat center; background-size:cover; border-radius:20px;}
 .trans_ser_img{border-radius: 20px;width: 100%; height: 500px;}
 .trans_ser_2 .trans_ser_R{background:url(@/assets/images/transport2.png) no-repeat center; background-size:cover; border-radius:20px;}
@@ -1798,7 +1809,7 @@ select::-ms-expand{display:none;}
 .logi_con_div_1920{display:none !important;}
 .logi_con_div_1280{display:block !important;}
 .logi_intro_L{width: -webkit-fill-available;}
-.logi_intro_R{text-align: left; width: 54vw;}
+.logi_intro_R{text-align: left; width: 60vw;}
 .logi_line_li_1920{display:list-item;}
 .logi_line_li_1280{display:none;}
 .M_order{display:none;}
@@ -1809,23 +1820,23 @@ select::-ms-expand{display:none;}
 @media all and (min-width:1280px) and (max-width:1624px){
 
 .swiper_bg_img .swiper_bg_sub{width: 13%; height: inherit;}
-.swiper_bg3_sub_4{width: 120.268px; height: inherit; left:30%; bottom:22%;}
-.swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 34%;}
+.swiper_bg3_sub_4{width: 120.268px; height: inherit; left:33%; bottom:22%;}
+.swiper_bg3_sub_5{width: 120.268px; height: inherit; left: 46%; top: 39%;}
 .swiper_bg3_sub_6{width: 146.133px; height: inherit; right:8%; top:16%; }
 .swiper_bg3_sub_7{width: 116.27px; height: inherit; left:43%; top:-2%;}
 .swiper_bg2_sub_1{width: 120px; height: inherit;}
 .swiper_bg2_sub_2{width: 120px; height: inherit;}
-.swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
-.logi_intro_R_1280{display: none;}
-.logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
-.phrase_work_2{left: 40px; bottom: -8%;}
+.swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 42%; left: -76px;}
+.logi_intro_R_1280{display: block;}
+.logi_intro_R_1920{display: none;}
+.phrase_work_2{left: 12%; top: 65%;}
 .logi_line_div{min-height:272px;}
 .logi_ser_p_1920{display:none;}
 .logi_ser_p_1280{display:block;}
 .trans_ser_sub_img{width:80%;}
 .trans_ser_boxes{margin-top: 26px;}
 .trans_ser_boxes_4:first-child{margin-bottom: 12px;}
-.trans_ser_box{width: calc(25% - 12px) !important; height: 100px; margin-right: 12px;}
+.trans_ser_box{width: calc(25% - 9px) !important; height: 100px; margin-right: 12px;}
 .trans_ser_box img{width: 62px; height:auto;}
 .trans_ser_box p{font-size: 14px;}
 .logi_ser_b{font-size: 42px;}
@@ -1850,7 +1861,7 @@ select::-ms-expand{display:none;}
 .bg_1280{display: flex;}
 .phrase_work_1{left: 100px;}
 
-.phrase_work_3{right: 133px;}
+.phrase_work_3{right: 133px; top:120px;}
 .logo_intro .logostory{padding: 80px 160px;}
 .logo_intro_txt .logo_intro_t2{margin-top: 37px;}
 .color_orange{margin-right: 0;}
@@ -1929,7 +1940,7 @@ select::-ms-expand{display:none;}
 .swiper_bg2_sub_2{width: 120px; height: inherit;}
 .swiper_bg2_sub_3{width: 148.457px; height: inherit;top: 52%; left: -20%;}
 .logi_intro_R_1280{display: none;}
-.logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden;}
+.logi_intro_R_1920{display: inline-block; width: 32.99vw; overflow:hidden; white-space:nowrap;}
 
 .logi_line_div{min-height:272px;}
 .logi_ser_p_1920{display:none;}
@@ -1954,7 +1965,6 @@ select::-ms-expand{display:none;}
 .bg_1920{display: none;}
 .bg_1280{display: flex;}
 .phrase_work_1{left: 100px;}
-.phrase_work_2{left: 200px; bottom: -8%;}
 .phrase_work_3{right: 133px;}
 .logo_intro .logostory{padding: 80px 160px;}
 .logo_intro_txt .logo_intro_t2{margin-top: 37px;}
@@ -2008,7 +2018,7 @@ select::-ms-expand{display:none;}
 .bg_txt b{justify-content: center;}
 .bg_txt_b b{font-size: 2.875rem;}
 .bg_txt_b p{font-weight:bold;font-size: 2.875rem;}
-.bg_txt_p{font-size: 1.125rem; text-align:center; margin-top:32px;}
+.bg_txt_p{font-size: 1.125rem; text-align:center; margin-top:32px; margin-left:0;}
 .swiper_bg_img{margin-top:72px; width:auto;}
 .swiper_bg_img .swiper_bg_main1{width: 50%;}
 .swiper_bg_img .swiper_bg_main2{width: 50%;}
@@ -2101,7 +2111,7 @@ select::-ms-expand{display:none;}
 .single_phrase_img .car2{left: 38%; top: 36%;}
 .phrase_work_1{left: 100px;}
 .phrase_work_3{right: 133px;}
-.phrase_work_2{left: 80px; bottom: 4%;}
+.phrase_work_2{left: 12%;top: 67%;}
 
 /* logi_history */
 .logi_history{}
@@ -2158,6 +2168,7 @@ select::-ms-expand{display:none;}
 .trans_ser_R{width:calc(45% - 30px)}
 .trans_ser_boxes_3{display: flex; justify-content: center; width:100%; margin-bottom:12px;}
 .trans_ser_box{width: calc(33.3% - 12px) !important; height: auto; margin-right:12px;}
+.trans_ser_box:nth-child(3n){margin-right:0;}
 .trans_ser_box img{margin:0 12px;}
 .trans_ser_box p{font-size:0.75rem;}
 .trans_ser_boxes_3:last-child{margin-bottom:0px;}
@@ -2243,7 +2254,7 @@ select::-ms-expand{display:none;}
 .bg_txt b{justify-content: center;}
 .bg_txt_b b{font-size: 1.75rem;}
 .bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
-.bg_txt_p{font-size: 1rem; text-align:center; margin-top:24px;}
+.bg_txt_p{font-size: 1rem; text-align:center; margin-top:24px; margin-left:0;}
 .swiper_bg_img{margin-top:58px;}
 .swiper_bg_img .swiper_bg_main1{width: 70%;}
 .swiper_bg_img .swiper_bg_main2{width: 70%;}
