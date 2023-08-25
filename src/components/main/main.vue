@@ -710,7 +710,7 @@
         :speed="5000"
         :observer = "true"
         :observeParents = "true"
-        class="part_swiper mySwiper"
+        class="part_swiper mySwiper" 
       >
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-11.png"></swiper-slide>
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-12.png"></swiper-slide>
