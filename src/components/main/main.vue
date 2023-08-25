@@ -1227,7 +1227,7 @@ export default {
 .notice{ display: block; width: 100%; color: var(--black-text, #262E40); text-align: center; font-size: 3.375rem; text-align: center; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_history>.notice{color: var(--black-text, #fff); margin-bottom:80px; }
 .logi_history>.notice span{color: var(--black-text, #FF5819); font-size: 3.375rem; }
-.up_arrow{position: absolute; bottom: 10%; right: 6%; z-index: 1;}
+.up_arrow{position: absolute; bottom: 10%; right: 6%; z-index: 1; cursor:pointer;}
 .up_arrow img{width:60px; height:60px;}
 /* swiper */
 
@@ -2011,7 +2011,8 @@ select::-ms-expand{display:none;}
 @media all and (min-width:768px) and (max-width:1280px) {
 /* common */
 .notice{font-size: 2.25rem; font-weight: 700;letter-spacing: -0.04em; text-align: center;}
-.up_arrow{display:none;}
+.up_arrow{position: absolute; bottom: 10%; right: 6%; z-index: 1;}
+.up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
   .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out;}
@@ -2247,7 +2248,8 @@ select::-ms-expand{display:none;}
   .com_pro_com_2{margin: 0 30px;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .notice{font-size:1.5rem;}
-  .up_arrow{display:none;}
+  .up_arrow{position: absolute; bottom: 10%; right: 6%; z-index: 1;}
+  .up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
   .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out;}
