@@ -2262,7 +2262,7 @@ select::-ms-expand{display:none;}
   .up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
-  .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out;}
+  .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out; padding-bottom:25%;}
 .bg_txt b{justify-content: center;}
 .bg_txt_b b{font-size: 1.75rem;}
 .bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
