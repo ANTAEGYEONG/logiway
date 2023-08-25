@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-show="$route.name === 'Home'"></Header>
     <router-view></router-view>
   </div>
 </template>
