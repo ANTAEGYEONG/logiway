@@ -896,7 +896,9 @@
     </div>
   </footer>
     <div class="M_order" @click="clickcontent('estimate')">문의하기</div>
-    <div class="up_arrow"><img src="@/assets/images/up_arrow.png"></div>
+    <div class="up_arrow" @click="clickcontent('top')">
+      <img src="@/assets/images/up_arrow.png">
+    </div>
   </div>
 </template>
 
@@ -2177,7 +2179,7 @@ select::-ms-expand{display:none;}
 .trans_ser_img{height:inherit;}
 .trans_ser_sub_img{width:100%;}
 .trans_ser_2 .trans_ser_L{width:calc(45% - 30px);}
-.trans_ser_2 .trans_ser_R{width:calc(55% - 30px);} 
+.trans_ser_2 .trans_ser_R{width:calc(55% - 30px);}
 
 /* logi_compititon */
 .logi_compititon{padding:80px 48px 80px 48px;}
