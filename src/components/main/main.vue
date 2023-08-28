@@ -910,7 +910,7 @@
         </select>
     </div>
   </footer>
-    <div class="M_order" @click="clickcontent('estimate')">문의하기</div>
+    <div class="M_order" @click="clickcontent('estimate')" v-show="scrollstore.getscrollsection != 'last'">문의하기</div>
     <div class="up_arrow" @click="clickcontent('top')" v-show="scrollstore.getscrollsection != 'main'">
       <img src="@/assets/images/up_arrow.png">
     </div>
