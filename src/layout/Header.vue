@@ -106,10 +106,11 @@ export default {
 @media all and (min-width:1920px){
 .header_bg{width: 1920px;}
 }
-@media all and (min-width:1024px) and (max-width:1279px){
-.header_bg{padding:0px 80px;}
+@media all and (min-width:767px) and (max-width:1279px){
+.header_bg{padding:0px 48px;}
+.head_right li{margin-left:48px;}
 }
-@media all and (max-width:1023px) {
+@media all and (min-width:0px) and (max-width:767px){
 .dim{background: rgba(0, 0, 0, 0.2); z-index: 49; position: absolute; width: 100%; margin-top: 60px; height: calc(100vh - 60px); left: 0; top: 0;}
 .header{position:fixed; z-index:50;}
 .header_bg{max-width: 768px; padding:20px 16px; }
