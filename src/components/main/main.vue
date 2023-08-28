@@ -711,7 +711,7 @@
         :speed="5000"
         :observer = "true"
         :observeParents = "true"
-        class="part_swiper mySwiper" 
+        class="part_swiper mySwiper"
       >
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-11.png"></swiper-slide>
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-12.png"></swiper-slide>
@@ -904,7 +904,7 @@
 </template>
 
 <script>
-import {ref, watch, onMounted, computed} from "vue"
+import {ref, watch, onMounted, inject} from "vue"
 import { useScroll, whenever } from '@vueuse/core'
 import { useRouter } from 'vue-router'
 //import { storeToRefs } from 'pinia'
@@ -920,6 +920,8 @@ import {usescrollstore} from "@/store/scrollcontent";
 import TriggerObserver from "@/components/common/triggerObserver";
 
 import * as mailAPI from '@/api/mail'
+
+import CryptoJS from 'crypto-js'
 
 export default {
   name: "mainpage",
@@ -1149,6 +1151,14 @@ export default {
           "phone": vm.phone,
           "email": vm.email,
           "contents": vm.content
+        }
+
+        let encrypted = CryptoJS.AES.encrypt(JSON.stringify(jsondata),"b'0123456789abcdef0123456789abcdef'").toString()
+
+        //console.log(encrypted)
+
+        let jsondata2 = {
+          "enc_data" : encrypted
         }
 
         mailAPI.sendmail(jsondata).then((response) => {

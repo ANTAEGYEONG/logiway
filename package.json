@@ -12,11 +12,13 @@
     "@vueuse/core": "^10.2.0",
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
+    "crypto-js": "^4.1.1",
     "gsap": "^3.12.2",
     "leaflet": "^1.9.4",
     "pinia": "^2.1.4",
     "swiper": "^9.4.1",
     "vue": "^3.2.13",
+    "vue-cryptojs": "^2.4.3",
     "vue-loader": "^17.2.2",
     "vue-router": "^4.2.2"
   },

@@ -354,7 +354,6 @@
     </footer> -->
 
     <footer>
-    <inquirycontent @triggerFadeIn="contentfadein('last')" :persec="1"><div></div></inquirycontent>
     <div class="footer_P">
       <img class="footer_img" src="@/assets/images/logo_w.png">
       <ul>
@@ -434,6 +433,26 @@ export default {
     return{
 
     }
+  },
+  methods : {
+    familysitechange(event){
+
+      if(event.target.value == 1){
+        window.open("https://www.insungdata.com/")
+      }else if(event.target.value == 2){
+        window.open("https://logiall.com/")
+      }else if(event.target.value == 3){
+        window.open("http://www.bikebank.kr/")
+      }else if(event.target.value == 4){
+        window.open("https://www.dotstation.kr/")
+      }
+    },
+
+    private(){
+      let vm = this
+      let routerdata = vm.$router.resolve({ name: 'private' })
+      window.open(routerdata.href, '_blank');
+    },
   }
 }
 </script>
