@@ -10,7 +10,7 @@
             clickable: true,
           }"
           :autoplay="{
-            delay: 5000,
+            delay: 50000,
             disableOnInteraction: false,
           }"
           :navigation="true"
@@ -324,6 +324,7 @@
     <secondcontent @triggerFadeIn="contentfadein('second')" :persec="1"><div></div></secondcontent>
     <b class="notice">기업 로고(CI) 소개</b>
     <img class="logostory" src="@/assets/images/logostory.png">
+    <img class="logostory_m" src="@/assets/images/logostory_m.png">
     <div class="logo_intro_txt">
       <div class="logo_intro_t logo_intro_t1">
         <b>로고 스토리</b>
@@ -1581,6 +1582,7 @@ export default {
 /* lgo_intro */
 .logo_intro{display:block; padding: 160px 0;}
 .logo_intro .logostory{width: 100%; padding: 80px 316px;}
+.logo_intro .logostory_m{width: 100%;}
 .logo_intro_txt{padding: 0 252px; overflow: hidden;}
 .logo_intro_txt div{display:inline-block;}
 .logo_intro_txt .logo_intro_t1{width: inherit; margin-right: 34px;}
@@ -1734,6 +1736,7 @@ select::-ms-expand{display:none;}
   .single_bg{width:1920px; margin: 0 auto; position: relative; }
   .logi_intro{width:1920px; margin: 0 auto; }
   .logo_intro .logostory{width: 1920px; margin:0 auto;}
+  .logo_intro .logostory_m{display:none;}
   .logi_service{width: 1920px; margin:0 auto;}
   .notice{ margin:0 auto;}
   .logi_his_list{width: 1920px; margin:0 auto;}
@@ -1777,6 +1780,7 @@ select::-ms-expand{display:none;}
 .logi_line_ul b{font-size: 2.292vw;}
 .logo_intro_t1 div{padding: 64px 29px 38px 29px; max-width:640px; width:auto; height: 300px;}
 .logo_intro .logostory{padding: 80px 230px;}
+.logo_intro .logostory_m{display:none;}
 .main_color{height:300px; width:240px;}
 .swiper_bg_img .swiper_bg_main{width:100%;}
 .swiper_bg_img{width:52%;}
@@ -1863,6 +1867,7 @@ select::-ms-expand{display:none;}
 
 .phrase_work_3{right: 133px; top:120px;}
 .logo_intro .logostory{padding: 80px 160px;}
+.logo_intro .logostory_m{display:none;}
 .logo_intro_txt .logo_intro_t2{margin-top: 37px;}
 .color_orange{margin-right: 0;}
 .color_navy{float:right;}
@@ -1910,6 +1915,7 @@ select::-ms-expand{display:none;}
 .logi_line_ul b{font-size: 2.292vw;}
 .logo_intro_t1 div{padding: 64px 29px 38px 29px; max-width:640px; width:auto; height: 300px;}
 .logo_intro .logostory{padding: 80px 230px;}
+
 .main_color{height:300px; width:240px;}
 .swiper_bg_img .swiper_bg_main{width:100%;}
 .swiper_bg_img{width:52%;}
@@ -1967,6 +1973,7 @@ select::-ms-expand{display:none;}
 .phrase_work_1{left: 100px;}
 .phrase_work_3{right: 133px;}
 .logo_intro .logostory{padding: 80px 160px;}
+
 .logo_intro_txt .logo_intro_t2{margin-top: 37px;}
 .color_orange{margin-right: 0;}
 .color_navy{float:right;}
@@ -2127,7 +2134,8 @@ select::-ms-expand{display:none;}
 
 /* logo_intro */
 .logo_intro{padding:100px 48px 120px 48px;}
-.logo_intro .logostory{padding:56px 0px;}
+.logo_intro .logostory{display:none;}
+.logo_intro .logostory_m{padding:56px 0px;}
 .logo_intro_txt{padding:0;}
 .logo_intro_txt .logo_intro_t1{margin-right:0; width:100%; margin-bottom:0;}
 .logo_intro_txt .logo_intro_t2{width:100%; margin-top:56px;}
@@ -2252,17 +2260,17 @@ select::-ms-expand{display:none;}
   .up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
-  .swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out; padding-bottom:25%;}
+.swiper_bg{ display: block; width: 100%; height: auto;padding: 0 20px; animation: swiper-5e2104ef 1s ease-in-out; padding-bottom:25%;}
 .bg_txt b{justify-content: center;}
-.bg_txt_b b{font-size: 1.75rem;}
-.bg_txt_b p{font-weight:bold;font-size: 1.75rem;}
+.bg_txt_b b{font-size: 2rem;}
+.bg_txt_b p{font-weight:bold;font-size: 2rem;}
 .bg_txt_p{font-size: 1rem; text-align:center; margin-top:24px; margin-left:0;}
 .swiper_bg_img{margin-top:58px;}
-.swiper_bg_img .swiper_bg_main1{width: 70%;}
-.swiper_bg_img .swiper_bg_main2{width: 70%;}
-.swiper_bg_img .swiper_bg_main3{width: 70%;}
+.swiper_bg_img .swiper_bg_main1{width: 90%;}
+.swiper_bg_img .swiper_bg_main2{width: 90%;}
+.swiper_bg_img .swiper_bg_main3{width: 90%;}
 .swiper_bg2_sub_3{}
-.swiper_bg_img .swiper_bg_sub{width: 12%;}
+.swiper_bg_img .swiper_bg_sub{width: 12%;left: 29%; top: 7%;}
 .swiper_bg3_sub_4{width: 20%; height: inherit; left:32%; bottom:22%;}
 .swiper_bg3_sub_5{width: 20%; height: inherit; left: 50%; top: 44%; animation: speech2 3s ease-in-out infinite;}
 .swiper_bg3_sub_6{width: 20%; height: inherit; right:18%; top:16%; }
@@ -2365,7 +2373,8 @@ select::-ms-expand{display:none;}
 
 /* logo_intro */
 .logo_intro{padding:80px 20px;}
-.logo_intro .logostory{padding:0; margin:42px 0 48px 0;}
+.logo_intro .logostory{display:none;}
+.logo_intro .logostory_m{padding:0; margin:42px 0 48px 0;}
 .logo_intro_txt{padding:0;}
 .logo_intro_txt div{}
 
@@ -2373,12 +2382,12 @@ select::-ms-expand{display:none;}
 .logo_intro_txt .logo_intro_t{}
 .logo_intro_txt>.logo_intro_t>b{font-size: 1.25rem; font-weight: 700; line-height: 30px; letter-spacing: -0.04em; text-align: left;}
 .logo_intro_t1 div{border:0px; padding:0;}
-.logostory_sub{margin:24px 0;}
+.logostory_sub{margin:24px 0; width:80%;}
 .pc_1280_txt{display:block;}
 .pc_1920_txt{display:none;}
 .logo_intro_t1 div p{font-size:1rem; margin-top:24px;}
 .logo_intro_txt .logo_intro_t2{width:100%; display:inline-block;}
-.main_color{width:calc(50% - 16px); height:182px; padding:18px 20px;}
+.main_color{width:calc(50% - 16px); height:182px; padding:18px 20px; border-radius:10px;}
 .color_orange{}
 .main_color_eg{font-size:0.75rem;}
 .main_color_num{font-size:0.75rem;}
