@@ -81,7 +81,7 @@
               <h3 class="bg_txt_b_m">
                 <b>고객과 기사의 연결을</b><br>
                 <b>더 쉽고 더 빠르게</b>
-              </h3> 
+              </h3>
               <p class="bg_txt_p">복잡하고 어려운 절차는 이제 그만 !<br>물류, 이제 로지웨이에서 해결하세요.</p>
             </div>
             <div class="swiper_bg_img">
@@ -559,7 +559,7 @@
           <p class="logi_ser_p logi_ser_p_1280">
             로지웨이는 인성데이타의 빅데이터 기반 종합물류 플랫폼을 통해
             화주와 기사와의 합리적인 주선 매칭서비스를 제공합니다.<br>
-            또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게 
+            또한, 상황실의 실시간 상담을 통해 보다 신속하고 정확하게
             고객대응을 하고 있습니다.
           </p>
           <img class="trans_ser_sub_img" src="@/assets/images/transport3.png">

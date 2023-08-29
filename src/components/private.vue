@@ -353,7 +353,7 @@
       </div>
     </footer> -->
 
-    <footer>
+<!--    <footer>
     <div class="footer_P">
       <img class="footer_img" src="@/assets/images/logo_w.png">
       <ul>
@@ -422,7 +422,7 @@
           <option value="4">닷스테이션</option>
         </select>
     </div>
-  </footer>
+  </footer>-->
   </div>
 </template>
 
