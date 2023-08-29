@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="private_div">
-      <h2>개인정보 수집/이용 동의</h2>
+      <h2>개인정보처리방침</h2>
       <br>
       <p>
         로지웨이 주식회사(이하 “회사”라 함)는 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 개인정보 보호법, 통신비밀보호법, 전기통신사업법 등 정보 통신 서비스 제공자가 준수하여야 할 관련 법령상의 개인정보 보호규정을 준수하며, 관련 법령에 의거한 개인정보 처리방침을 정하여 이용자 권익보호에 최선을 다하고 있습니다.
@@ -16,7 +16,7 @@
       <h3>1. 수집하는 개인정보의 항목 및 수집방법</h3>
       <br>
       <p>1) 수집하는 개인정보의 항목</p>
-      <table>
+      <table style="overflow-x:auto;">
         <thead>
           <tr>
             <th>수집, 이용목적</th>
@@ -81,7 +81,7 @@
     <br>
     <p>1) 회사는 정보주체의 개인정보를 개인정보의 처리 목적에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한 규정 등 개 「개인정보보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공하고 그 이외에는 정보주체의 개인정보를 제3자에게 제공하지 않습니다.</p>
     <p>2) 회사는 다음과 같이 재난, 감영병, 급박한 생명·신체 위험을 초래하는 사건·사고, 급박한 재산 손실 등의 긴급상황이 발생하는 경우 정보주체의 동의 없이 관계기관에 개인정보를 제공할 수 있습니다.</p>
-      <table>
+      <table class="private_list">
         <thead>
           <tr>
             <th>분류</th>
@@ -471,19 +471,24 @@ export default {
   width: 100vw;
   height: 50vh;
 }
-
-table{margin:6px 0; border-radius: 5px!important; border: 1px solid #e0e1e3 !important;background: #fff !important;}
+.private_list{overflow-x: auto; display: block; width: fit-content;  max-width: 100%; border: 1px solid #000;}
+.private_list thead, .private_list thead tr, .private_list thead th{border-top:0px;}
+/* .private_list thead th{border-top:0px;} */
+.private_list thead th:first-child, .private_list td:first-child{border-left:0px;}
+.private_list thead th:last-child, .private_list td:last-child{border-right:0px;}
+.private_list tr{border-left: 0px; border-right: 0px;}
+.private_list tr:last-child, .private_list tr:last-child td, .private_list tr:nth-last-child(2) td:first-child{border-bottom:0px;}
+table{margin:6px 0; border: 1px solid #e0e1e3;background: #fff ; }
 tr ,th, td{
   font-size: 15px !important;
   padding: 4px 8px !important;
   color: #000 !important;
   text-align: left;
-  border: 1px solid #000!important;
+  border: 1px solid #000;
   vertical-align: middle;
-  word-break:normal;
 }
-.private_div{padding:20px; text-align: left;
-     word-break: keep-all;}
+tbody{overflow-x: scroll;}
+.private_div{padding:20px; text-align: left; word-break: keep-all;}
 h2{font-size: 20px;}
 
 
