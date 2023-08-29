@@ -24,6 +24,11 @@ const routes = [
         name: "private",
         component: () => import("@/components/private"),
     },
+    {
+        path: "/private_use",
+        name: "private_use",
+        component: () => import("@/components/private_use"),
+    },
 ]
 
 const router = createRouter({

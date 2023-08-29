@@ -836,7 +836,7 @@
             <div class="check_box">
               <input type="checkbox" id="check1" v-model="check">
             <label for="check1">
-              <p @click="private">개인정보 수집/이용 동의(필수)</p>
+              <p @click="private_use">개인정보 수집/이용 동의(필수)</p>
             </label>
             </div>
             <button class="counsel_btn" :class="{act : check && title != '' && company != '' && phone != '' && email != '' && content != ''}" @click="mailsubmit">문의신청</button>
@@ -1221,6 +1221,12 @@ export default {
     private(){
       let vm = this
       let routerdata = vm.$router.resolve({ name: 'private' })
+      window.open(routerdata.href, '_blank');
+    },
+
+    private_use(){
+      let vm = this
+      let routerdata = vm.$router.resolve({ name: 'private_use' })
       window.open(routerdata.href, '_blank');
     },
 
