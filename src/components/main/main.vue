@@ -1263,10 +1263,11 @@ export default {
 <style scoped>
 
 /* common */
+.main{position:relative;}
 .notice{ display: block; width: 100%; color: var(--black-text, #262E40); text-align: center; font-size: 3.375rem; text-align: center; font-style: normal; font-weight: 700; line-height: 140%; letter-spacing: -2.16px;}
 .logi_history>.notice{color: var(--black-text, #fff); margin-bottom:80px; }
 .logi_history>.notice span{color: var(--black-text, #FF5819); font-size: 3.375rem; }
-.up_arrow{position: absolute; bottom: 6%; right: 6%; z-index: 1; cursor:pointer;}
+.up_arrow{position: fixed; bottom: 6%; right: 4%; z-index: 1; width: 60px; float: right; cursor:pointer;}
 .up_arrow img{width:60px; height:60px;}
 /* swiper */
 
@@ -1726,9 +1727,9 @@ footer ul{width: 100%; display: block; overflow: hidden; margin-bottom:40px;}
 footer ul li{float:left; font-weight:bold; color:#fff; padding-right:40px; font-size:1.125rem; cursor: pointer;}
 .footer_txt{color: #8B95A1; margin-top:22px; display: flex; justify-content: space-between; align-items: flex-end;}
 .footer_txt p{color: #8B95A1;}
-.footer_txt select{-webkit-appearance:none; -moz-appearance:none; appearance:none; background:url(../../../src/assets/images/arrow.png) no-repeat 95% 50% #262E40; background-size: 20px 20px; color: #999; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 160%; letter-spacing: -0.64px;width: 226px; padding: 16px;  border-radius: 8px; border: 1px solid #8B95A1; height: 56px;;}
+.footer_txt select{cursor:pointer; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url(../../../src/assets/images/arrow.png) no-repeat 95% 50% #262E40; background-size: 20px 20px; color: #999; font-size: 1rem; font-style: normal; font-weight: 500; line-height: 160%; letter-spacing: -0.64px;width: 226px; padding: 16px;  border-radius: 8px; border: 1px solid #8B95A1; height: 56px;;}
 select::-ms-expand{display:none;}
-.footer_txt select option{}
+.footer_txt select option{cursor:pointer;}
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -2072,7 +2073,7 @@ select::-ms-expand{display:none;}
 @media all and (min-width:767px) and (max-width:1280px) {
 /* common */
 .notice{font-size: 2.25rem; font-weight: 700;letter-spacing: -0.04em; text-align: center;}
-.up_arrow{position: absolute; bottom: 6%; right: 6%; z-index: 1;}
+.up_arrow{position: fixed; bottom: 6%; right: 4%; z-index: 1; width: 40px; float: right; cursor:pointer;}
 .up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
@@ -2320,7 +2321,7 @@ select::-ms-expand{display:none;}
   .com_pro_com_2{margin: 0 30px;}
   .com_pro_com .com_pro_shape{width: inherit; height:480px;}
   .notice{font-size:1.5rem;}
-  .up_arrow{position: absolute; bottom: 6%; right: 6%; z-index: 1;}
+  .up_arrow{position: fixed; bottom: 6%; right: 6%; z-index: 1; width: 40px; float: right; cursor:pointer;}
   .up_arrow img{width:40px; height:40px;}
 
   /* main_bg */
