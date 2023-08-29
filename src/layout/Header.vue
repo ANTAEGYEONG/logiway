@@ -15,7 +15,7 @@
         <div class="head_right_m">
           <img class="m_tab" src="@/assets/images/tab.png" @click="headeropen = !headeropen">
           <div class="header_ul" v-show="headeropen">
-            <div class="dim"></div>
+            <div class="dim" @click="headeropen = false"></div>
             <ul class="head_m_ul">
               <li @click="clickcontent('intro')">회사소개</li>
               <li @click="clickcontent('business')">사업소개</li>
