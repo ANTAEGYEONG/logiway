@@ -10,7 +10,7 @@
             clickable: true,
           }"
           :autoplay="{
-            delay: 50000,
+            delay:5000,
             disableOnInteraction: false,
           }"
           :navigation="true"
@@ -692,6 +692,7 @@
         :slidesPerView="5"
         :spaceBetween="0"
         :loop="true"
+        :loopAdditionalSlides="1"
         :autoplay="{
           delay: 0,
           disableOnInteraction: false,
@@ -718,7 +719,8 @@
         :slidesPerView="5"
         :spaceBetween="0"
         :loop="true"
-        :loopedSlides = "1"
+        :loopedSlides = "2"
+        :loopAdditionalSlides="1"
         :autoplay="{
           delay: 0,
           disableOnInteraction: false,
@@ -745,6 +747,7 @@
         :slidesPerView="2.5"
         :spaceBetween="0"
         :loop="true"
+        :loopAdditionalSlides="1"
         :autoplay="{
           delay: 0,
           disableOnInteraction: false,
@@ -768,6 +771,8 @@
         :slidesPerView="2.5"
         :spaceBetween="0"
         :loop="true"
+        :loopedSlides = "2"
+        :loopAdditionalSlides="1"
         :autoplay="{
           delay: 0,
           disableOnInteraction: false,
@@ -777,7 +782,7 @@
         :observer = "true"
         :observeParents = "true"
         :modules="modules"
-        class="mySwiper part_swiper"
+        class="part_swiper mySwiper"
         >
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-07.png"></swiper-slide>
         <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-08.png"></swiper-slide>
@@ -787,20 +792,20 @@
         </swiper>
 
         <swiper
-          :slidesPerView="2.5"
-          :spaceBetween="0"
-          :loop="true"
-          :loopedSlides = "1"
-          :autoplay="{
-            delay: 0,
-            disableOnInteraction: false,
-            reverseDirection: true,
-          }"
-          :modules="modules"
-          :speed="5000"
-          :observer = "true"
-          :observeParents = "true"
-          class="part_swiper mySwiper"
+        :slidesPerView="2.5"
+        :spaceBetween="0"
+        :loop="true"
+        :loopAdditionalSlides="1"
+        :autoplay="{
+          delay: 0,
+          disableOnInteraction: false,
+          reverseDirection: true,
+        }"
+        :speed="5000"
+        :observer = "true"
+        :observeParents = "true"
+        :modules="modules"
+        class="part_swiper mySwiper"
         >
           <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-12.png"></swiper-slide>
           <swiper-slide class="swiper-slide"><img src="@/assets/images/logo_1/png/clients_logo_230810-13.png"></swiper-slide>
