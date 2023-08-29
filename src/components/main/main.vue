@@ -1856,6 +1856,7 @@ select::-ms-expand{display:none;}
 .logi_con_T{display:none;}
 .single_phrase_img .single_phrase_back{width:100%; margin-top: 56px;}
 .single_phrase_img .single_phrase_back_m{display:none;}
+.footer_T{display:none;}
 }
 @media all and (min-width:1280px) and (max-width:1850px){
 .logi_con_div_1920{display:none !important;}
