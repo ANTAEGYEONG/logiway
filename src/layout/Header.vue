@@ -94,7 +94,7 @@ export default {
 }
 </script>
 <style scoped>
-.header{width: 100%; height: 60px; position: absolute; left: 0; top:0; background: #FFF;  z-index: 2;}
+.header{width: 100%; height: 60px; position: sticky; left: 0; top:0; background: #FFF;  z-index: 2;}
 .header_bg{width: 100%; margin: 0 auto;display: flex; align-items: center; justify-content: space-between; padding:0 160px; height: 60px;}
 .head_left{ cursor : pointer; width:200px;}
 .head_left img{width: 100%; height: inherit;}
