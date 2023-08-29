@@ -1737,7 +1737,7 @@ select::-ms-expand{display:none;}
   background-color: #fff;
   font-size: 1.125rem;
   font-weight: bold;
-}
+} 
 
 #mapContainer {
   width: 100vw;
