@@ -96,8 +96,8 @@ export default {
 <style scoped>
 .header{width: 100%; height: 60px; position: absolute; left: 0; top:0; background: #FFF;  z-index: 2;}
 .header_bg{width: 100%; margin: 0 auto;display: flex; align-items: center; justify-content: space-between; padding:0 160px; height: 60px;}
-.head_left{ cursor : pointer;}
-.head_left img{width: 212px; height: 48px;}
+.head_left{ cursor : pointer; width:200px;}
+.head_left img{width: 100%; height: inherit;}
 .head_right{}
 .head_right li{float: left; margin-left: 78px; color: #121212; cursor : pointer;}
 .head_right li.click_hd{color: #FF5819;}
@@ -114,11 +114,12 @@ export default {
 .dim{background: rgba(0, 0, 0, 0.2); z-index: 49; position: absolute; width: 100%; margin-top: 60px; height: calc(100vh - 60px); left: 0; top: 0;}
 .header{position:fixed; z-index:50;}
 .header_bg{max-width: 768px; padding:20px 16px; }
-.head_left img{width: 124px; height: inherit;}
+.head_left{width:152px;}
+.head_left img{width: 100%; height: inherit;}
 .head_right{display:none;}
 .head_right_m{display:block; background:#fff;}
 .m_tab{width:24px; height:24px;}
-.head_m_ul{background:#fff; position:absolute; width:100%; left: 0; top: 100%; border-radius: 0 0 10px 10px; padding:0 20px; z-index:50;}
+.head_m_ul{background:#fff; position:absolute; width:100%; left: 0; top: 100%; border-radius: 0 0 20px 20px; padding:0 20px; z-index:50;}
 .head_m_ul li{max-width: 768px; position:relative; padding:14px 0; color: #000; font-size: 1rem; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.64px; left:50%; transform:translateX(-50%);}
 .head_m_ul li:after{position:absolute; content:""; left:0; bottom:0; width:100%; height:1px; background:#e0e0e0;}
 .head_m_ul li:last-of-type:after{height: 0px;}

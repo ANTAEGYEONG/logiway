@@ -467,7 +467,7 @@ export default {
   font-weight: bold;
 }
 
-#mapContainer {
+#mapContainer { 
   width: 100vw;
   height: 50vh;
 }
@@ -480,8 +480,10 @@ tr ,th, td{
   text-align: left;
   border: 1px solid #000!important;
   vertical-align: middle;
+  word-break:normal;
 }
-.private_div{padding:20px; text-align: left; word-break: keep-all;}
+.private_div{padding:20px; text-align: left;
+     word-break: keep-all;}
 h2{font-size: 20px;}
 
 
